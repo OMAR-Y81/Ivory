@@ -1,0 +1,1945 @@
+<!-- =========================================================
+     SOKNANA FOOTER
+     منصة سوكنانا العقارية - المملكة العربية السعودية
+========================================================= -->
+
+<style>
+
+  .sk-footer,
+  .sk-footer * {
+    box-sizing: border-box;
+  }
+
+  .sk-footer {
+    --sk-primary: #1685f8;
+    --sk-primary-light: #5eb3ff;
+    --sk-dark: #041f3e;
+    --sk-navy: #062b54;
+    --sk-text: #c8ddf1;
+    --sk-muted: #8faecb;
+    --sk-border: rgba(255,255,255,.10);
+
+    position: relative;
+    overflow: hidden;
+
+    direction: rtl;
+
+    font-family:
+      Tahoma,
+      Arial,
+      sans-serif;
+
+    background:
+      linear-gradient(
+        135deg,
+        #041c38 0%,
+        #062c55 55%,
+        #073969 100%
+      );
+
+    color: var(--sk-text);
+  }
+
+
+  /* =========================================================
+     BACKGROUND DECORATION
+  ========================================================= */
+
+  .sk-footer::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    top: -280px;
+    left: -180px;
+
+    border-radius: 50%;
+
+    background:
+      radial-gradient(
+        circle,
+        rgba(38,145,255,.16),
+        transparent 68%
+      );
+
+    pointer-events: none;
+  }
+
+
+  .sk-footer::after {
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    bottom: -300px;
+    right: -120px;
+
+    border-radius: 50%;
+
+    background:
+      radial-gradient(
+        circle,
+        rgba(42,148,255,.12),
+        transparent 70%
+      );
+
+    pointer-events: none;
+  }
+
+
+  /* =========================================================
+     CTA TOP SECTION
+  ========================================================= */
+
+  .sk-footer-cta {
+    position: relative;
+    z-index: 2;
+
+    max-width: 1380px;
+
+    margin: 0 auto;
+
+    padding:
+      45px 5%;
+  }
+
+
+  .sk-footer-cta-box {
+
+    position: relative;
+    overflow: hidden;
+
+    padding:
+      32px 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    border:
+      1px solid rgba(255,255,255,.13);
+
+    border-radius: 20px;
+
+    background:
+      linear-gradient(
+        120deg,
+        rgba(10,107,211,.38),
+        rgba(10,72,142,.28)
+      );
+
+    box-shadow:
+      0 18px 50px rgba(0,0,0,.12);
+  }
+
+
+  .sk-footer-cta-box::after {
+
+    content: "⌂";
+
+    position: absolute;
+
+    left: 40px;
+    top: 50%;
+
+    transform:
+      translateY(-50%);
+
+    font-size: 130px;
+
+    color:
+      rgba(255,255,255,.035);
+
+    pointer-events: none;
+  }
+
+
+  .sk-footer-cta-content {
+
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+  }
+
+
+  .sk-footer-cta-icon {
+
+    width: 62px;
+    height: 62px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 16px;
+
+    background:
+      rgba(255,255,255,.11);
+
+    border:
+      1px solid rgba(255,255,255,.12);
+
+    color: white;
+  }
+
+
+  .sk-footer-cta-icon svg {
+
+    width: 29px;
+    height: 29px;
+  }
+
+
+  .sk-footer-cta h3 {
+
+    margin:
+      0 0 8px;
+
+    color: white;
+
+    font-size: 21px;
+  }
+
+
+  .sk-footer-cta p {
+
+    margin: 0;
+
+    color: #bcd8f3;
+
+    font-size: 12px;
+
+    line-height: 1.9;
+  }
+
+
+  .sk-footer-add-property {
+
+    position: relative;
+
+    z-index: 2;
+
+    min-width: max-content;
+
+    height: 48px;
+
+    padding:
+      0 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    border-radius: 11px;
+
+    background: white;
+
+    color: #075bb7 !important;
+
+    text-decoration: none;
+
+    font-size: 13px !important;
+    font-weight: 800;
+
+    box-shadow:
+      0 8px 25px
+      rgba(0,0,0,.13);
+
+    transition:
+      transform .2s ease,
+      box-shadow .2s ease;
+  }
+
+
+  .sk-footer-add-property:hover {
+
+    transform:
+      translateY(-2px);
+
+    box-shadow:
+      0 12px 30px
+      rgba(0,0,0,.18);
+
+    color: #03448e !important;
+  }
+
+
+  .sk-footer-add-property svg {
+
+    width: 18px;
+    height: 18px;
+  }
+
+
+  /* =========================================================
+     MAIN FOOTER
+  ========================================================= */
+
+  .sk-footer-main {
+
+    position: relative;
+    z-index: 2;
+
+    max-width: 1380px;
+
+    margin: auto;
+
+    padding:
+      20px 5% 55px;
+  }
+
+
+  .sk-footer-grid {
+
+    display: grid;
+
+    grid-template-columns:
+      1.7fr
+      1fr
+      1fr
+      1fr
+      1.2fr;
+
+    gap: 42px;
+  }
+
+
+  /* =========================================================
+     BRAND
+  ========================================================= */
+
+  .sk-footer-brand {
+
+    padding-left: 15px;
+  }
+
+
+  .sk-footer-logo {
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 11px;
+
+    margin-bottom: 21px;
+
+    color: white;
+
+    text-decoration: none;
+  }
+
+
+  .sk-footer-logo-icon {
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+      linear-gradient(
+        135deg,
+        #1788fa,
+        #0560bd
+      );
+
+    box-shadow:
+      0 9px 25px
+      rgba(0,97,203,.25);
+  }
+
+
+  .sk-footer-logo-icon svg {
+
+    width: 27px;
+    height: 27px;
+  }
+
+
+  .sk-footer-logo-name {
+
+    font-size: 28px;
+    font-weight: 900;
+
+    line-height: 1;
+  }
+
+
+  .sk-footer-logo-name span {
+
+    color:
+      var(--sk-primary-light);
+  }
+
+
+  .sk-footer-logo-tag {
+
+    display: block;
+
+    margin-top: 6px;
+
+    color:
+      #89aecd;
+
+    font-size: 9px;
+    font-weight: normal;
+  }
+
+
+  .sk-footer-description {
+
+    max-width: 350px;
+
+    margin:
+      0 0 23px;
+
+    color:
+      #a9c4dc;
+
+    font-size: 12px;
+
+    line-height: 2.1;
+  }
+
+
+  .sk-footer-location {
+
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 22px;
+
+    color:
+      #c5dbee;
+
+    font-size: 11px;
+  }
+
+
+  .sk-footer-location svg {
+
+    width: 17px;
+    height: 17px;
+
+    color:
+      #4eacff;
+  }
+
+
+  /* =========================================================
+     SOCIAL MEDIA
+  ========================================================= */
+
+  .sk-footer-social {
+
+    display: flex;
+
+    gap: 9px;
+  }
+
+
+  .sk-footer-social a {
+
+    width: 39px;
+    height: 39px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border:
+      1px solid rgba(255,255,255,.10);
+
+    border-radius: 10px;
+
+    background:
+      rgba(255,255,255,.055);
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    transition:
+      all .2s ease;
+  }
+
+
+  .sk-footer-social a:hover {
+
+    transform:
+      translateY(-3px);
+
+    background:
+      #0875dd;
+
+    border-color:
+      #0875dd;
+
+    color: white;
+  }
+
+
+  /* =========================================================
+     FOOTER COLUMNS
+  ========================================================= */
+
+  .sk-footer-column h3 {
+
+    position: relative;
+
+    margin:
+      8px 0 24px;
+
+    padding-bottom: 13px;
+
+    color: white;
+
+    font-size: 14px;
+  }
+
+
+  .sk-footer-column h3::after {
+
+    content: "";
+
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+
+    width: 28px;
+    height: 2px;
+
+    border-radius: 5px;
+
+    background:
+      #2997ff;
+  }
+
+
+  .sk-footer-column ul {
+
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+  }
+
+
+  .sk-footer-column li {
+
+    margin-bottom: 13px;
+  }
+
+
+  .sk-footer-column a {
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 6px;
+
+    color:
+      #9ebbd4;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    transition:
+      all .18s ease;
+  }
+
+
+  .sk-footer-column a::before {
+
+    content: "›";
+
+    color:
+      #438fd7;
+
+    font-size: 17px;
+
+    line-height: 0;
+
+    transition:
+      transform .18s ease;
+  }
+
+
+  .sk-footer-column a:hover {
+
+    color:
+      #61b9ff;
+
+    transform:
+      translateX(-3px);
+  }
+
+
+  /* =========================================================
+     CITIES
+  ========================================================= */
+
+  .sk-footer-cities {
+
+    display: grid;
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap:
+      4px 8px;
+  }
+
+
+  /* =========================================================
+     CONTACT
+  ========================================================= */
+
+  .sk-contact-list {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 13px;
+  }
+
+
+  .sk-contact-item {
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 10px;
+  }
+
+
+  .sk-contact-icon {
+
+    width: 32px;
+    height: 32px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background:
+      rgba(35,145,250,.10);
+
+    color:
+      #51adff;
+  }
+
+
+  .sk-contact-icon svg {
+
+    width: 15px;
+    height: 15px;
+  }
+
+
+  .sk-contact-text small {
+
+    display: block;
+
+    margin-bottom: 3px;
+
+    color:
+      #7598b8;
+
+    font-size: 9px;
+  }
+
+
+  .sk-contact-text span,
+  .sk-contact-text a {
+
+    color:
+      #c0d6e9;
+
+    font-size: 10px;
+
+    text-decoration: none;
+  }
+
+
+  .sk-contact-text a::before {
+
+    display: none;
+  }
+
+
+  .sk-contact-text a:hover {
+
+    transform: none;
+
+    color:
+      #5eb8ff;
+  }
+
+
+  /* =========================================================
+     FOOTER BOTTOM
+  ========================================================= */
+
+  .sk-footer-bottom {
+
+    position: relative;
+    z-index: 2;
+
+    border-top:
+      1px solid var(--sk-border);
+
+    background:
+      rgba(1,18,35,.22);
+  }
+
+
+  .sk-footer-bottom-container {
+
+    max-width: 1380px;
+
+    margin: auto;
+
+    padding:
+      19px 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    color:
+      #7f9db8;
+
+    font-size: 10px;
+  }
+
+
+  .sk-footer-bottom-links {
+
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+  }
+
+
+  .sk-footer-bottom-links a {
+
+    color:
+      #8eacc7;
+
+    text-decoration: none;
+
+    transition:
+      color .2s;
+  }
+
+
+  .sk-footer-bottom-links a:hover {
+
+    color:
+      #5bb7ff;
+  }
+
+
+  /* =========================================================
+     SAUDI BADGE
+  ========================================================= */
+
+  .sk-saudi-badge {
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 7px;
+
+    margin-top: 19px;
+
+    padding:
+      8px 11px;
+
+    border:
+      1px solid rgba(255,255,255,.08);
+
+    border-radius: 8px;
+
+    background:
+      rgba(255,255,255,.035);
+
+    color:
+      #8caac5;
+
+    font-size: 9px;
+  }
+
+
+  .sk-saudi-badge span {
+
+    font-size: 14px;
+  }
+
+
+  /* =========================================================
+     BACK TO TOP
+  ========================================================= */
+
+  .sk-back-top {
+
+    position: fixed;
+
+    left: 25px;
+    bottom: 25px;
+
+    z-index: 9000;
+
+    width: 43px;
+    height: 43px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 0;
+
+    border-radius: 12px;
+
+    background:
+      linear-gradient(
+        135deg,
+        #1485f4,
+        #0556ad
+      );
+
+    color: white;
+
+    box-shadow:
+      0 8px 25px
+      rgba(4,76,153,.25);
+
+    cursor: pointer;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform:
+      translateY(10px);
+
+    transition:
+      all .25s ease;
+  }
+
+
+  .sk-back-top.show {
+
+    opacity: 1;
+    visibility: visible;
+
+    transform:
+      translateY(0);
+  }
+
+
+  .sk-back-top:hover {
+
+    transform:
+      translateY(-3px);
+  }
+
+
+  .sk-back-top svg {
+
+    width: 18px;
+    height: 18px;
+  }
+
+
+  /* =========================================================
+     RESPONSIVE
+  ========================================================= */
+
+  @media(max-width: 1100px) {
+
+    .sk-footer-grid {
+
+      grid-template-columns:
+        1.7fr 1fr 1fr 1fr;
+
+    }
+
+
+    .sk-footer-contact-column {
+
+      grid-column:
+        1 / -1;
+    }
+
+
+    .sk-contact-list {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
+    }
+
+  }
+
+
+  @media(max-width: 850px) {
+
+    .sk-footer-cta-box {
+
+      align-items:
+        flex-start;
+
+      flex-direction:
+        column;
+
+    }
+
+
+    .sk-footer-grid {
+
+      grid-template-columns:
+        repeat(2,1fr);
+
+    }
+
+
+    .sk-footer-brand {
+
+      grid-column:
+        1 / -1;
+
+    }
+
+
+    .sk-footer-contact-column {
+
+      grid-column:
+        auto;
+
+    }
+
+
+    .sk-contact-list {
+
+      display: flex;
+
+    }
+
+  }
+
+
+  @media(max-width: 600px) {
+
+    .sk-footer-cta {
+
+      padding:
+        28px 4%;
+
+    }
+
+
+    .sk-footer-cta-box {
+
+      padding:
+        25px 21px;
+
+    }
+
+
+    .sk-footer-cta-content {
+
+      align-items:
+        flex-start;
+
+    }
+
+
+    .sk-footer-cta-icon {
+
+      width: 50px;
+      height: 50px;
+
+    }
+
+
+    .sk-footer-cta h3 {
+
+      font-size: 17px;
+
+    }
+
+
+    .sk-footer-add-property {
+
+      width: 100%;
+
+    }
+
+
+    .sk-footer-main {
+
+      padding:
+        10px 6% 40px;
+
+    }
+
+
+    .sk-footer-grid {
+
+      grid-template-columns:
+        1fr;
+
+      gap: 30px;
+
+    }
+
+
+    .sk-footer-brand,
+    .sk-footer-contact-column {
+
+      grid-column:
+        auto;
+
+    }
+
+
+    .sk-footer-cities {
+
+      grid-template-columns:
+        repeat(2,1fr);
+
+    }
+
+
+    .sk-footer-bottom-container {
+
+      flex-direction:
+        column;
+
+      text-align: center;
+
+    }
+
+
+    .sk-footer-bottom-links {
+
+      justify-content:
+        center;
+
+    }
+
+
+    .sk-back-top {
+
+      left: 15px;
+      bottom: 15px;
+
+    }
+
+  }
+
+</style>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer
+  class="sk-footer"
+  id="contact">
+
+
+  <!-- =======================================================
+       PROPERTY CTA
+  ======================================================== -->
+
+  <section class="sk-footer-cta">
+
+    <div class="sk-footer-cta-box">
+
+      <div class="sk-footer-cta-content">
+
+        <div class="sk-footer-cta-icon">
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round">
+
+            <path d="M3 11.5L12 4l9 7.5"></path>
+
+            <path d="M5.5 10v9h13v-9"></path>
+
+            <path d="M12 8v8"></path>
+
+            <path d="M8 12h8"></path>
+
+          </svg>
+
+        </div>
+
+
+        <div>
+
+          <h3>
+            هل لديك عقار ترغب في عرضه؟
+          </h3>
+
+          <p>
+            أضف عقارك في سوكنانا وسهّل وصول الباحثين
+            عن العقارات إليه في مختلف مناطق المملكة.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <a
+        href="mailto:info@soknana.com?subject=إضافة عقار في سوكنانا"
+        class="sk-footer-add-property">
+
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2">
+
+          <path d="M12 5v14"></path>
+          <path d="M5 12h14"></path>
+
+        </svg>
+
+        أضف عقارك الآن
+
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- =======================================================
+       MAIN FOOTER
+  ======================================================== -->
+
+  <div class="sk-footer-main">
+
+    <div class="sk-footer-grid">
+
+
+      <!-- ===================================================
+           BRAND
+      ==================================================== -->
+
+      <div class="sk-footer-brand">
+
+        <a
+          href="index.html"
+          class="sk-footer-logo">
+
+
+          <span class="sk-footer-logo-icon">
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round">
+
+              <path d="M3 11.5L12 4l9 7.5"></path>
+
+              <path d="M5.5 10v9h13v-9"></path>
+
+              <path d="M9.5 19v-5.5h5V19"></path>
+
+            </svg>
+
+          </span>
+
+
+          <span>
+
+            <span class="sk-footer-logo-name">
+              سوكنا<span>نا</span>
+            </span>
+
+            <span class="sk-footer-logo-tag">
+              منصتك العقارية في المملكة
+            </span>
+
+          </span>
+
+        </a>
+
+
+        <p class="sk-footer-description">
+
+          سوكنانا منصة عقارية تساعدك في البحث عن
+          العقارات المعروضة للبيع والإيجار والاستثمار،
+          من الفلل والشقق والأراضي إلى العقارات التجارية
+          والاستراحات والمزارع في مختلف مدن المملكة.
+
+        </p>
+
+
+        <div class="sk-footer-location">
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2">
+
+            <path
+              d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0z">
+            </path>
+
+            <circle
+              cx="12"
+              cy="10"
+              r="3">
+            </circle>
+
+          </svg>
+
+          نخدم الباحثين عن العقار في جميع مناطق المملكة
+
+        </div>
+
+
+        <!-- SOCIAL MEDIA -->
+
+        <div class="sk-footer-social">
+
+          <a
+            href="https://x.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="سوكنانا على منصة X"
+            title="X">
+
+            X
+
+          </a>
+
+
+          <a
+            href="https://instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="سوكنانا على إنستغرام"
+            title="Instagram">
+
+            ◎
+
+          </a>
+
+
+          <a
+            href="https://linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="سوكنانا على لينكدإن"
+            title="LinkedIn">
+
+            in
+
+          </a>
+
+
+          <a
+            href="https://youtube.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="سوكنانا على يوتيوب"
+            title="YouTube">
+
+            ▶
+
+          </a>
+
+        </div>
+
+
+        <div class="sk-saudi-badge">
+
+          <span>🇸🇦</span>
+
+          منصة عقارية مخصصة للسوق السعودي
+
+        </div>
+
+      </div>
+
+
+      <!-- ===================================================
+           QUICK LINKS
+      ==================================================== -->
+
+      <div class="sk-footer-column">
+
+        <h3>
+          سوكنانا
+        </h3>
+
+        <ul>
+
+          <li>
+            <a href="index.html">
+              الرئيسية
+            </a>
+          </li>
+
+          <li>
+            <a href="index.html#properties">
+              جميع العقارات
+            </a>
+          </li>
+
+          <li>
+            <a href="index.html#categories">
+              تصنيفات العقارات
+            </a>
+          </li>
+
+          <li>
+            <a href="index.html#why-us">
+              لماذا سوكنانا؟
+            </a>
+          </li>
+
+          <li>
+            <a href="index.html#contact">
+              تواصل معنا
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="index.html#properties"
+              data-footer-purpose="بيع">
+              عقارات للبيع
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="index.html#properties"
+              data-footer-purpose="إيجار">
+              عقارات للإيجار
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- ===================================================
+           PROPERTY TYPES
+      ==================================================== -->
+
+      <div class="sk-footer-column">
+
+        <h3>
+          أنواع العقارات
+        </h3>
+
+        <ul>
+
+          <li>
+            <a
+              href="index.html#properties"
+              data-footer-type="فيلا">
+              فلل
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="index.html#properties"
+              data-footer-type="شقة">
+              شقق
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="index.html#properties"
+              data-footer-type="دور">
+              أدوار
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="index.html#properties"
+              data-footer-type="أرض">
+              أراضٍ
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="index.html#properties"
+              data-footer-type="عمارة">
+              عمائر
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="index.html#properties"
+              data-footer-type="تجاري">
+              عقارات تجارية
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="index.html#properties"
+              data-footer-type="استراحة">
+              استراحات
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="index.html#properties"
+              data-footer-type="مزرعة">
+              مزارع
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- ===================================================
+           CITIES
+      ==================================================== -->
+
+      <div class="sk-footer-column">
+
+        <h3>
+          عقارات حسب المدينة
+        </h3>
+
+
+        <ul class="sk-footer-cities">
+
+          <li>
+            <a
+              href="index.html#properties"
+              data-footer-city="الرياض">
+              الرياض
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="index.html#properties"
+              data-footer-city="جدة">
+              جدة
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="index.html#properties"
+              data-footer-city="مكة">
+              مكة
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="index.html#properties"
+              data-footer-city="المدينة">
+              المدينة
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="index.html#properties"
+              data-footer-city="الدمام">
+              الدمام
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="index.html#properties"
+              data-footer-city="الخبر">
+              الخبر
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="index.html#properties"
+              data-footer-city="الطائف">
+              الطائف
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="index.html#properties"
+              data-footer-city="أبها">
+              أبها
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="index.html#properties"
+              data-footer-city="تبوك">
+              تبوك
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="index.html#properties"
+              data-footer-city="القصيم">
+              القصيم
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- ===================================================
+           CONTACT
+      ==================================================== -->
+
+      <div
+        class="
+          sk-footer-column
+          sk-footer-contact-column
+        ">
+
+        <h3>
+          تواصل معنا
+        </h3>
+
+
+        <div class="sk-contact-list">
+
+
+          <!-- LOCATION -->
+
+          <div class="sk-contact-item">
+
+            <div class="sk-contact-icon">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2">
+
+                <path
+                  d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0z">
+                </path>
+
+                <circle
+                  cx="12"
+                  cy="10"
+                  r="3">
+                </circle>
+
+              </svg>
+
+            </div>
+
+
+            <div class="sk-contact-text">
+
+              <small>
+                نطاق الخدمة
+              </small>
+
+              <span>
+                جميع مناطق المملكة العربية السعودية
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <!-- EMAIL -->
+
+          <div class="sk-contact-item">
+
+            <div class="sk-contact-icon">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2">
+
+                <path
+                  d="M4 4h16v16H4z">
+                </path>
+
+                <path
+                  d="M4 6l8 6 8-6">
+                </path>
+
+              </svg>
+
+            </div>
+
+
+            <div class="sk-contact-text">
+
+              <small>
+                البريد الإلكتروني
+              </small>
+
+              <a
+                href="mailto:info@soknana.com">
+
+                info@soknana.com
+
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <!-- PROPERTY -->
+
+          <div class="sk-contact-item">
+
+            <div class="sk-contact-icon">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2">
+
+                <path
+                  d="M3 11.5L12 4l9 7.5">
+                </path>
+
+                <path
+                  d="M5.5 10v9h13v-9">
+                </path>
+
+              </svg>
+
+            </div>
+
+
+            <div class="sk-contact-text">
+
+              <small>
+                عرض عقارك
+              </small>
+
+              <a
+                href="mailto:info@soknana.com?subject=طلب إضافة عقار في سوكنانا">
+
+                تواصل معنا لإضافة عقارك
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+  <!-- =======================================================
+       BOTTOM
+  ======================================================== -->
+
+  <div class="sk-footer-bottom">
+
+    <div class="sk-footer-bottom-container">
+
+      <div>
+
+        ©
+        <span id="skYear">
+          2026
+        </span>
+
+        سوكنانا.
+
+        جميع الحقوق محفوظة.
+
+      </div>
+
+
+      <div class="sk-footer-bottom-links">
+
+        <a href="#">
+          سياسة الخصوصية
+        </a>
+
+        <a href="#">
+          الشروط والأحكام
+        </a>
+
+        <a href="#">
+          سياسة الاستخدام
+        </a>
+
+        <a href="#">
+          خريطة الموقع
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- =========================================================
+     BACK TO TOP
+========================================================= -->
+
+<button
+  class="sk-back-top"
+  id="skBackTop"
+  type="button"
+  aria-label="العودة إلى أعلى الصفحة"
+  title="العودة للأعلى">
+
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round">
+
+    <path d="M18 15l-6-6-6 6"></path>
+
+  </svg>
+
+</button>
+
+
+<script>
+
+(function () {
+
+
+  /* =========================================================
+     CURRENT YEAR
+  ========================================================= */
+
+  const year =
+    document.getElementById(
+      "skYear"
+    );
+
+
+  if (year) {
+
+    year.textContent =
+      new Date().getFullYear();
+
+  }
+
+
+
+  /* =========================================================
+     PROPERTY TYPE
+  ========================================================= */
+
+  document
+    .querySelectorAll(
+      "[data-footer-type]"
+    )
+    .forEach(function (link) {
+
+      link.addEventListener(
+        "click",
+        function () {
+
+          sessionStorage.setItem(
+            "soknanaPropertyType",
+            link.dataset.footerType
+          );
+
+        }
+      );
+
+    });
+
+
+
+  /* =========================================================
+     PROPERTY PURPOSE
+  ========================================================= */
+
+  document
+    .querySelectorAll(
+      "[data-footer-purpose]"
+    )
+    .forEach(function (link) {
+
+      link.addEventListener(
+        "click",
+        function () {
+
+          sessionStorage.setItem(
+            "soknanaPropertyPurpose",
+            link.dataset.footerPurpose
+          );
+
+        }
+      );
+
+    });
+
+
+
+  /* =========================================================
+     PROPERTY CITY
+  ========================================================= */
+
+  document
+    .querySelectorAll(
+      "[data-footer-city]"
+    )
+    .forEach(function (link) {
+
+      link.addEventListener(
+        "click",
+        function () {
+
+          sessionStorage.setItem(
+            "soknanaPropertyCity",
+            link.dataset.footerCity
+          );
+
+        }
+      );
+
+    });
+
+
+
+  /* =========================================================
+     BACK TO TOP
+  ========================================================= */
+
+  const backTop =
+    document.getElementById(
+      "skBackTop"
+    );
+
+
+  if (backTop) {
+
+    window.addEventListener(
+      "scroll",
+      function () {
+
+        if (
+          window.scrollY > 450
+        ) {
+
+          backTop.classList.add(
+            "show"
+          );
+
+        } else {
+
+          backTop.classList.remove(
+            "show"
+          );
+
+        }
+
+      }
+    );
+
+
+    backTop.addEventListener(
+      "click",
+      function () {
+
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+
+      }
+    );
+
+  }
+
+
+})();
+
+</script>

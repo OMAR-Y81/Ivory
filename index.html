@@ -1,0 +1,5270 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0">
+
+<title>
+  سوكنانا | عقارات للبيع والإيجار في السعودية
+</title>
+
+<meta
+  name="description"
+  content="سوكنانا منصة عقارية سعودية للبحث عن الفلل والشقق والأراضي والعقارات التجارية المعروضة للبيع والإيجار في مختلف مدن المملكة العربية السعودية.">
+
+<meta
+  name="keywords"
+  content="عقارات, عقارات السعودية, عقارات الرياض, فلل للبيع, شقق للايجار, أراضي للبيع, سوكنانا">
+
+<meta
+  name="theme-color"
+  content="#075fca">
+
+
+<style>
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root {
+
+  --primary: #0866d5;
+  --primary-dark: #03499e;
+  --primary-deep: #06366f;
+
+  --navy: #062b55;
+
+  --blue-50: #f4f9ff;
+  --blue-100: #e9f4ff;
+  --blue-200: #d8ebff;
+
+  --text: #183653;
+  --muted: #71869b;
+
+  --border: #e1ebf5;
+
+  --white: #ffffff;
+
+  --success: #15966a;
+
+  --shadow:
+    0 15px 45px
+    rgba(6, 57, 110, .08);
+
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+
+html {
+
+  scroll-behavior: smooth;
+
+  scroll-padding-top: 115px;
+
+}
+
+
+body {
+
+  margin: 0;
+
+  direction: rtl;
+
+  font-family:
+    Tahoma,
+    Arial,
+    sans-serif;
+
+  background:
+    #f8fbff;
+
+  color:
+    var(--text);
+
+}
+
+
+body,
+button,
+input,
+select {
+  font-family:
+    Tahoma,
+    Arial,
+    sans-serif;
+}
+
+
+button {
+  cursor: pointer;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+
+.container {
+
+  width: 100%;
+
+  max-width: 1400px;
+
+  margin:
+    0 auto;
+
+  padding:
+    0 5%;
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+
+  position: relative;
+
+  min-height: 610px;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  color: white;
+
+  background:
+
+    linear-gradient(
+      90deg,
+      rgba(2, 25, 52, .45),
+      rgba(3, 41, 82, .91)
+    ),
+
+    url(
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1900&q=85"
+    );
+
+  background-size: cover;
+
+  background-position: center;
+
+}
+
+
+.hero::after {
+
+  content: "";
+
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  left: -160px;
+  bottom: -300px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(52, 159, 255, .25),
+      transparent 65%
+    );
+
+}
+
+
+.hero-content {
+
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 340px);
+  align-items: center;
+  gap: clamp(36px, 6vw, 90px);
+  padding-top: 60px;
+  padding-bottom: 135px;
+
+}
+
+.hero-copy {
+  min-width: 0;
+}
+
+.hero-video-frame {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  margin: 0;
+  overflow: hidden;
+  border: 6px solid rgba(255, 255, 255, .72);
+  border-radius: 50% 50% 22px 22px / 28.125% 28.125% 22px 22px;
+  background: var(--navy);
+  box-shadow: 0 24px 60px rgba(0, 15, 35, .35);
+  isolation: isolate;
+}
+
+.hero-video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.hero-badge {
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 9px;
+
+  padding:
+    9px 16px;
+
+  border:
+    1px solid rgba(255,255,255,.2);
+
+  border-radius: 30px;
+
+  background:
+    rgba(255,255,255,.09);
+
+  backdrop-filter:
+    blur(8px);
+
+  color:
+    #e4f3ff;
+
+  font-size:
+    11px;
+
+}
+
+
+.hero-badge-dot {
+
+  width: 7px;
+  height: 7px;
+
+  border-radius:
+    50%;
+
+  background:
+    #63c1ff;
+
+  box-shadow:
+    0 0 0 5px
+    rgba(99,193,255,.13);
+
+}
+
+
+.hero h1 {
+
+  max-width: 750px;
+
+  margin:
+    24px 0 14px;
+
+  font-size:
+    clamp(
+      35px,
+      4.3vw,
+      61px
+    );
+
+  line-height:
+    1.42;
+
+  letter-spacing:
+    -1px;
+
+}
+
+
+.hero h1 span {
+
+  color:
+    #67baff;
+
+}
+
+
+.hero-description {
+
+  max-width:
+    650px;
+
+  margin: 0;
+
+  color:
+    #d2e6f8;
+
+  font-size:
+    15px;
+
+  line-height:
+    2.1;
+
+}
+
+
+.hero-highlights {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 23px;
+
+  margin-top:
+    28px;
+
+}
+
+
+.hero-highlight {
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  color:
+    #dceeff;
+
+  font-size:
+    11px;
+
+}
+
+
+.hero-check {
+
+  width: 21px;
+  height: 21px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius:
+    50%;
+
+  background:
+    rgba(82,180,255,.18);
+
+  color:
+    #77c7ff;
+
+}
+
+
+/* =========================================================
+   SEARCH PANEL
+========================================================= */
+
+.search-section {
+
+  position: relative;
+
+  z-index: 10;
+
+  margin-top:
+    -88px;
+
+}
+
+
+.search-panel {
+
+  overflow: hidden;
+
+  border:
+    1px solid
+    rgba(222,235,247,.9);
+
+  border-radius:
+    20px;
+
+  background:
+    white;
+
+  box-shadow:
+    0 20px 60px
+    rgba(5,55,105,.12);
+
+}
+
+
+.search-header {
+
+  padding:
+    20px 25px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+}
+
+
+.search-tabs {
+
+  display: flex;
+
+  gap: 7px;
+
+}
+
+
+.search-tab {
+
+  min-width:
+    90px;
+
+  height:
+    42px;
+
+  border: 0;
+
+  border-radius:
+    9px;
+
+  background:
+    var(--blue-100);
+
+  color:
+    var(--primary);
+
+  font-size:
+    12px;
+
+  font-weight:
+    800;
+
+  transition:
+    all .2s ease;
+
+}
+
+
+.search-tab.active {
+
+  background:
+    linear-gradient(
+      135deg,
+      #0875e7,
+      #0555ad
+    );
+
+  color:
+    white;
+
+  box-shadow:
+    0 7px 18px
+    rgba(6,100,205,.20);
+
+}
+
+
+.search-caption {
+
+  color:
+    var(--muted);
+
+  font-size:
+    10px;
+
+}
+
+
+.search-form {
+
+  display: grid;
+
+  grid-template-columns:
+    1.15fr
+    1.15fr
+    1fr
+    1fr
+    auto;
+
+  gap:
+    12px;
+
+  padding:
+    20px 25px 26px;
+
+}
+
+
+.search-field {
+
+  position:
+    relative;
+
+}
+
+
+.search-field label {
+
+  display:
+    block;
+
+  margin-bottom:
+    8px;
+
+  color:
+    #405b74;
+
+  font-size:
+    10px;
+
+  font-weight:
+    bold;
+
+}
+
+
+.search-field select,
+.search-field input {
+
+  width:
+    100%;
+
+  height:
+    49px;
+
+  padding:
+    0 13px;
+
+  outline:
+    none;
+
+  border:
+    1px solid
+    var(--border);
+
+  border-radius:
+    10px;
+
+  background:
+    #fbfdff;
+
+  color:
+    var(--text);
+
+  font-size:
+    11px;
+
+  transition:
+    all .2s;
+
+}
+
+
+.search-field select:focus,
+.search-field input:focus {
+
+  border-color:
+    #70b3f4;
+
+  background:
+    white;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(8,102,213,.07);
+
+}
+
+
+.search-button {
+
+  align-self:
+    end;
+
+  height:
+    49px;
+
+  padding:
+    0 25px;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  gap:
+    8px;
+
+  border:
+    0;
+
+  border-radius:
+    10px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #0874e7,
+      #0452a9
+    );
+
+  color:
+    white;
+
+  font-size:
+    12px;
+
+  font-weight:
+    800;
+
+  white-space:
+    nowrap;
+
+  box-shadow:
+    0 8px 20px
+    rgba(6,91,188,.20);
+
+  transition:
+    .2s;
+
+}
+
+
+.search-button:hover {
+
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    0 11px 25px
+    rgba(6,91,188,.28);
+
+}
+
+
+.search-button svg {
+
+  width:
+    17px;
+
+  height:
+    17px;
+
+}
+
+
+/* =========================================================
+   QUICK STATS
+========================================================= */
+
+.quick-stats {
+
+  padding:
+    32px 0 5px;
+
+}
+
+
+.stats-grid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap:
+    15px;
+
+}
+
+
+.stat-card {
+
+  padding:
+    18px;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  gap:
+    13px;
+
+  border:
+    1px solid
+    var(--border);
+
+  border-radius:
+    13px;
+
+  background:
+    white;
+
+}
+
+
+.stat-icon {
+
+  width:
+    45px;
+
+  height:
+    45px;
+
+  flex-shrink:
+    0;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  border-radius:
+    11px;
+
+  background:
+    var(--blue-100);
+
+  font-size:
+    20px;
+
+}
+
+
+.stat-number {
+
+  display:
+    block;
+
+  color:
+    var(--navy);
+
+  font-size:
+    17px;
+
+  font-weight:
+    900;
+
+}
+
+
+.stat-label {
+
+  display:
+    block;
+
+  margin-top:
+    3px;
+
+  color:
+    var(--muted);
+
+  font-size:
+    9px;
+
+}
+
+
+/* =========================================================
+   GENERAL SECTIONS
+========================================================= */
+
+.section {
+
+  padding:
+    80px 0;
+
+}
+
+
+.section-soft {
+
+  background:
+    linear-gradient(
+      180deg,
+      #f0f7ff,
+      #f8fbff
+    );
+
+}
+
+
+.section-header {
+
+  margin-bottom:
+    31px;
+
+  display:
+    flex;
+
+  align-items:
+    flex-end;
+
+  justify-content:
+    space-between;
+
+  gap:
+    25px;
+
+}
+
+
+.section-eyebrow {
+
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  gap:
+    7px;
+
+  color:
+    var(--primary);
+
+  font-size:
+    10px;
+
+  font-weight:
+    800;
+
+}
+
+
+.section-eyebrow::before {
+
+  content:
+    "";
+
+  width:
+    18px;
+
+  height:
+    2px;
+
+  border-radius:
+    3px;
+
+  background:
+    var(--primary);
+
+}
+
+
+.section-header h2 {
+
+  margin:
+    8px 0 8px;
+
+  color:
+    var(--navy);
+
+  font-size:
+    28px;
+
+}
+
+
+.section-header p {
+
+  margin:
+    0;
+
+  color:
+    var(--muted);
+
+  font-size:
+    11px;
+
+  line-height:
+    1.9;
+
+}
+
+
+.section-link {
+
+  color:
+    var(--primary);
+
+  font-size:
+    11px;
+
+  font-weight:
+    bold;
+
+}
+
+
+/* =========================================================
+   CATEGORIES
+========================================================= */
+
+.categories-grid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(6, 1fr);
+
+  gap:
+    14px;
+
+}
+
+
+.category-card {
+
+  padding:
+    23px 12px;
+
+  text-align:
+    center;
+
+  border:
+    1px solid
+    var(--border);
+
+  border-radius:
+    14px;
+
+  background:
+    white;
+
+  cursor:
+    pointer;
+
+  transition:
+    all .22s ease;
+
+}
+
+
+.category-card:hover {
+
+  transform:
+    translateY(-5px);
+
+  border-color:
+    #9dccfa;
+
+  box-shadow:
+    0 13px 30px
+    rgba(5,74,145,.09);
+
+}
+
+
+.category-icon {
+
+  width:
+    57px;
+
+  height:
+    57px;
+
+  margin:
+    0 auto 15px;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  border-radius:
+    15px;
+
+  background:
+    var(--blue-100);
+
+  font-size:
+    25px;
+
+}
+
+
+.category-card h3 {
+
+  margin:
+    0 0 6px;
+
+  color:
+    var(--navy);
+
+  font-size:
+    13px;
+
+}
+
+
+.category-card p {
+
+  margin:
+    0;
+
+  color:
+    var(--muted);
+
+  font-size:
+    9px;
+
+  line-height:
+    1.7;
+
+}
+
+
+/* =========================================================
+   PROPERTY FILTER BAR
+========================================================= */
+
+.property-toolbar {
+
+  margin-bottom:
+    24px;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    space-between;
+
+  gap:
+    15px;
+
+}
+
+
+.property-filter-info {
+
+  color:
+    var(--muted);
+
+  font-size:
+    11px;
+
+}
+
+
+.property-filter-info strong {
+
+  color:
+    var(--primary);
+
+}
+
+
+.clear-filter {
+
+  display:
+    none;
+
+  padding:
+    8px 13px;
+
+  border:
+    1px solid
+    #bdd9f6;
+
+  border-radius:
+    8px;
+
+  background:
+    white;
+
+  color:
+    var(--primary);
+
+  font-size:
+    10px;
+
+  font-weight:
+    bold;
+
+}
+
+
+.clear-filter.show {
+
+  display:
+    inline-flex;
+
+}
+
+
+/* =========================================================
+   PROPERTY GRID
+========================================================= */
+
+.property-grid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap:
+    22px;
+
+}
+
+
+.property-card {
+
+  overflow:
+    hidden;
+
+  border:
+    1px solid
+    var(--border);
+
+  border-radius:
+    16px;
+
+  background:
+    white;
+
+  box-shadow:
+    0 5px 20px
+    rgba(4,50,96,.035);
+
+  transition:
+    all .25s ease;
+
+}
+
+
+.property-card:hover {
+
+  transform:
+    translateY(-6px);
+
+  box-shadow:
+    0 17px 40px
+    rgba(5,62,120,.11);
+
+}
+
+
+.property-image {
+
+  position:
+    relative;
+
+  height:
+    235px;
+
+  overflow:
+    hidden;
+
+  background:
+    var(--blue-100);
+
+}
+
+
+.property-image img {
+
+  width:
+    100%;
+
+  height:
+    100%;
+
+  object-fit:
+    cover;
+
+  transition:
+    transform .4s ease;
+
+}
+
+
+.property-card:hover
+.property-image img {
+
+  transform:
+    scale(1.055);
+
+}
+
+
+.property-overlay {
+
+  position:
+    absolute;
+
+  inset:
+    0;
+
+  background:
+    linear-gradient(
+      180deg,
+      transparent 55%,
+      rgba(0,25,50,.30)
+    );
+
+  pointer-events:
+    none;
+
+}
+
+
+.property-badges {
+
+  position:
+    absolute;
+
+  top:
+    13px;
+
+  right:
+    13px;
+
+  display:
+    flex;
+
+  gap:
+    6px;
+
+}
+
+
+.property-badge {
+
+  padding:
+    7px 11px;
+
+  border-radius:
+    7px;
+
+  background:
+    var(--primary);
+
+  color:
+    white;
+
+  font-size:
+    9px;
+
+  font-weight:
+    bold;
+
+}
+
+
+.property-badge.featured {
+
+  background:
+    #f5a623;
+
+}
+
+
+.favorite-button {
+
+  position:
+    absolute;
+
+  top:
+    13px;
+
+  left:
+    13px;
+
+  width:
+    36px;
+
+  height:
+    36px;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  border:
+    1px solid
+    rgba(255,255,255,.5);
+
+  border-radius:
+    10px;
+
+  background:
+    rgba(255,255,255,.90);
+
+  color:
+    #31516e;
+
+  font-size:
+    18px;
+
+  cursor:
+    pointer;
+
+  transition:
+    .2s;
+
+}
+
+
+.favorite-button:hover,
+.favorite-button.active {
+
+  background:
+    #fff;
+
+  color:
+    #e94d64;
+
+  transform:
+    scale(1.05);
+
+}
+
+
+.property-body {
+
+  padding:
+    20px;
+
+}
+
+
+.property-topline {
+
+  display:
+    flex;
+
+  align-items:
+    flex-start;
+
+  justify-content:
+    space-between;
+
+  gap:
+    10px;
+
+}
+
+
+.property-price {
+
+  color:
+    var(--primary);
+
+  font-size:
+    20px;
+
+  font-weight:
+    900;
+
+}
+
+
+.property-price small {
+
+  color:
+    var(--muted);
+
+  font-size:
+    9px;
+
+  font-weight:
+    normal;
+
+}
+
+
+.property-type {
+
+  padding:
+    6px 9px;
+
+  border-radius:
+    6px;
+
+  background:
+    var(--blue-100);
+
+  color:
+    var(--primary);
+
+  font-size:
+    9px;
+
+  font-weight:
+    bold;
+
+}
+
+
+.property-title {
+
+  margin:
+    13px 0 8px;
+
+  color:
+    var(--navy);
+
+  font-size:
+    14px;
+
+  line-height:
+    1.7;
+
+}
+
+
+.property-location {
+
+  color:
+    var(--muted);
+
+  font-size:
+    10px;
+
+}
+
+
+.property-features {
+
+  margin-top:
+    17px;
+
+  padding:
+    15px 0;
+
+  display:
+    flex;
+
+  flex-wrap:
+    wrap;
+
+  gap:
+    13px;
+
+  border-top:
+    1px solid
+    var(--border);
+
+  border-bottom:
+    1px solid
+    var(--border);
+
+  color:
+    #526e87;
+
+  font-size:
+    9px;
+
+}
+
+
+.property-footer {
+
+  margin-top:
+    15px;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    space-between;
+
+  gap:
+    10px;
+
+}
+
+
+.property-details {
+
+  flex:
+    1;
+
+  padding:
+    11px;
+
+  border-radius:
+    8px;
+
+  background:
+    var(--blue-100);
+
+  color:
+    var(--primary);
+
+  text-align:
+    center;
+
+  font-size:
+    10px;
+
+  font-weight:
+    bold;
+
+  transition:
+    .2s;
+
+}
+
+
+.property-details:hover {
+
+  background:
+    var(--primary);
+
+  color:
+    white;
+
+}
+
+
+.property-id {
+
+  color:
+    #9aabba;
+
+  font-size:
+    8px;
+
+}
+
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.empty-state {
+
+  grid-column:
+    1 / -1;
+
+  padding:
+    60px 20px;
+
+  border:
+    1px dashed
+    #b9d6f3;
+
+  border-radius:
+    15px;
+
+  background:
+    white;
+
+  text-align:
+    center;
+
+}
+
+
+.empty-icon {
+
+  width:
+    65px;
+
+  height:
+    65px;
+
+  margin:
+    0 auto 18px;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  border-radius:
+    50%;
+
+  background:
+    var(--blue-100);
+
+  font-size:
+    28px;
+
+}
+
+
+.empty-state h3 {
+
+  color:
+    var(--navy);
+
+}
+
+
+.empty-state p {
+
+  color:
+    var(--muted);
+
+  font-size:
+    11px;
+
+}
+
+
+/* =========================================================
+   CITIES
+========================================================= */
+
+.cities-grid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(5, 1fr);
+
+  gap:
+    14px;
+
+}
+
+
+.city-card {
+
+  position:
+    relative;
+
+  min-height:
+    150px;
+
+  overflow:
+    hidden;
+
+  display:
+    flex;
+
+  align-items:
+    flex-end;
+
+  padding:
+    18px;
+
+  border-radius:
+    15px;
+
+  color:
+    white;
+
+  cursor:
+    pointer;
+
+  background:
+    linear-gradient(
+      135deg,
+      #075dbb,
+      #063b74
+    );
+
+  transition:
+    .25s;
+
+}
+
+
+.city-card:hover {
+
+  transform:
+    translateY(-4px);
+
+  box-shadow:
+    0 13px 30px
+    rgba(5,72,140,.16);
+
+}
+
+
+.city-card::before {
+
+  content:
+    "";
+
+  position:
+    absolute;
+
+  width:
+    130px;
+
+  height:
+    130px;
+
+  top:
+    -60px;
+
+  left:
+    -45px;
+
+  border-radius:
+    50%;
+
+  background:
+    rgba(255,255,255,.07);
+
+}
+
+
+.city-content {
+
+  position:
+    relative;
+
+  z-index:
+    2;
+
+}
+
+
+.city-content h3 {
+
+  margin:
+    0 0 5px;
+
+  font-size:
+    15px;
+
+}
+
+
+.city-content span {
+
+  color:
+    #c8e3fa;
+
+  font-size:
+    9px;
+
+}
+
+
+/* =========================================================
+   WHY SOKNANA
+========================================================= */
+
+.why-grid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap:
+    17px;
+
+}
+
+
+.why-card {
+
+  padding:
+    28px;
+
+  border:
+    1px solid
+    var(--border);
+
+  border-radius:
+    15px;
+
+  background:
+    white;
+
+  transition:
+    .22s;
+
+}
+
+
+.why-card:hover {
+
+  transform:
+    translateY(-4px);
+
+  box-shadow:
+    var(--shadow);
+
+}
+
+
+.why-icon {
+
+  width:
+    51px;
+
+  height:
+    51px;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  margin-bottom:
+    18px;
+
+  border-radius:
+    13px;
+
+  background:
+    var(--blue-100);
+
+  font-size:
+    22px;
+
+}
+
+
+.why-card h3 {
+
+  margin:
+    0 0 10px;
+
+  color:
+    var(--navy);
+
+  font-size:
+    13px;
+
+}
+
+
+.why-card p {
+
+  margin:
+    0;
+
+  color:
+    var(--muted);
+
+  font-size:
+    10px;
+
+  line-height:
+    2;
+
+}
+
+
+/* =========================================================
+   OWNER CTA
+========================================================= */
+
+.owner-section {
+
+  padding:
+    20px 0 80px;
+
+}
+
+
+.owner-box {
+
+  position:
+    relative;
+
+  overflow:
+    hidden;
+
+  padding:
+    50px;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    space-between;
+
+  gap:
+    35px;
+
+  border-radius:
+    22px;
+
+  background:
+    linear-gradient(
+      120deg,
+      #04366d,
+      #0871d8
+    );
+
+  color:
+    white;
+
+}
+
+
+.owner-box::after {
+
+  content:
+    "⌂";
+
+  position:
+    absolute;
+
+  left:
+    6%;
+
+  top:
+    50%;
+
+  transform:
+    translateY(-50%);
+
+  color:
+    rgba(255,255,255,.055);
+
+  font-size:
+    190px;
+
+}
+
+
+.owner-content {
+
+  position:
+    relative;
+
+  z-index:
+    2;
+
+}
+
+
+.owner-content span {
+
+  color:
+    #7fc6ff;
+
+  font-size:
+    10px;
+
+  font-weight:
+    bold;
+
+}
+
+
+.owner-content h2 {
+
+  margin:
+    9px 0 12px;
+
+  font-size:
+    28px;
+
+}
+
+
+.owner-content p {
+
+  max-width:
+    650px;
+
+  margin:
+    0;
+
+  color:
+    #d0e7f9;
+
+  font-size:
+    11px;
+
+  line-height:
+    2;
+
+}
+
+
+.owner-button {
+
+  position:
+    relative;
+
+  z-index:
+    2;
+
+  min-width:
+    max-content;
+
+  padding:
+    14px 25px;
+
+  border-radius:
+    10px;
+
+  background:
+    white;
+
+  color:
+    var(--primary);
+
+  font-size:
+    11px;
+
+  font-weight:
+    bold;
+
+  transition:
+    .2s;
+
+}
+
+
+.owner-button:hover {
+
+  transform:
+    translateY(-2px);
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width: 1150px) {
+
+  .search-form {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+  }
+
+
+  .search-button {
+
+    grid-column:
+      1 / -1;
+
+  }
+
+
+  .categories-grid {
+
+    grid-template-columns:
+      repeat(4, 1fr);
+
+  }
+
+
+  .cities-grid {
+
+    grid-template-columns:
+      repeat(3, 1fr);
+
+  }
+
+}
+
+
+@media(max-width: 950px) {
+
+  .property-grid {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+  }
+
+
+  .why-grid {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+  }
+
+
+  .stats-grid {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+  }
+
+}
+
+
+@media(max-width: 700px) {
+
+  .hero {
+
+    min-height:
+      560px;
+
+  }
+
+
+  .hero-content {
+
+    padding-top:
+      55px;
+
+    padding-bottom:
+      120px;
+
+  }
+
+
+  .hero h1 {
+
+    font-size:
+      34px;
+
+  }
+
+
+  .hero-description {
+
+    font-size:
+      12px;
+
+  }
+
+
+  .search-section {
+
+    margin-top:
+      -75px;
+
+  }
+
+
+  .search-header {
+
+    align-items:
+      flex-start;
+
+    flex-direction:
+      column;
+
+  }
+
+
+  .search-caption {
+
+    display:
+      none;
+
+  }
+
+
+  .search-form {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+
+  .search-button {
+
+    grid-column:
+      auto;
+
+  }
+
+
+  .categories-grid {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+  }
+
+
+  .property-grid {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+
+  .cities-grid {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+  }
+
+
+  .section {
+
+    padding:
+      55px 0;
+
+  }
+
+
+  .section-header {
+
+    align-items:
+      flex-start;
+
+    flex-direction:
+      column;
+
+  }
+
+
+  .section-header h2 {
+
+    font-size:
+      23px;
+
+  }
+
+
+  .owner-box {
+
+    padding:
+      35px 25px;
+
+    align-items:
+      flex-start;
+
+    flex-direction:
+      column;
+
+  }
+
+
+  .owner-content h2 {
+
+    font-size:
+      23px;
+
+  }
+
+}
+
+
+@media(max-width: 480px) {
+
+  .container {
+
+    padding:
+      0 4%;
+
+  }
+
+
+  .hero-highlights {
+
+    gap:
+      11px;
+
+  }
+
+
+  .stats-grid {
+
+    grid-template-columns:
+      1fr 1fr;
+
+  }
+
+
+  .stat-card {
+
+    padding:
+      13px;
+
+  }
+
+
+  .stat-icon {
+
+    display:
+      none;
+
+  }
+
+
+  .categories-grid {
+
+    gap:
+      9px;
+
+  }
+
+
+  .category-card {
+
+    padding:
+      19px 8px;
+
+  }
+
+
+  .cities-grid {
+
+    grid-template-columns:
+      1fr 1fr;
+
+  }
+
+
+  .city-card {
+
+    min-height:
+      120px;
+
+  }
+
+
+  .why-grid {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+}
+
+/* Keep the arched video beneath the copy on smaller screens. */
+@media (max-width: 700px) {
+  .hero-content {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+
+  .hero-video-frame {
+    width: min(100%, 280px);
+    justify-self: center;
+    border-width: 4px;
+  }
+}
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<div id="header-container"></div>
+
+
+<main>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero">
+
+  <div class="container hero-content">
+
+    <div class="hero-copy">
+
+    <div class="hero-badge">
+
+      <span class="hero-badge-dot"></span>
+
+      عقارات في جميع مناطق المملكة العربية السعودية
+
+    </div>
+
+
+    <h1>
+
+      ابحث عن العقار الذي
+      <br>
+
+      <span>
+        يناسب حياتك
+      </span>
+
+    </h1>
+
+
+    <p class="hero-description">
+
+      من الرياض إلى جدة ومن الخبر إلى أبها،
+      سوكنانا تجمع لك خيارات متنوعة من الفلل والشقق
+      والأراضي والعقارات التجارية المعروضة للبيع
+      والإيجار في مكان واحد.
+
+    </p>
+
+
+    <div class="hero-highlights">
+
+      <div class="hero-highlight">
+
+        <span class="hero-check">
+          ✓
+        </span>
+
+        بيع وشراء
+
+      </div>
+
+
+      <div class="hero-highlight">
+
+        <span class="hero-check">
+          ✓
+        </span>
+
+        إيجار
+
+      </div>
+
+
+      <div class="hero-highlight">
+
+        <span class="hero-check">
+          ✓
+        </span>
+
+        عقارات سكنية وتجارية
+
+      </div>
+
+
+      <div class="hero-highlight">
+
+        <span class="hero-check">
+          ✓
+        </span>
+
+        جميع مناطق المملكة
+
+      </div>
+
+    </div>
+
+    </div>
+
+    <div class="hero-video-frame">
+      <video
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        controls
+        preload="metadata"
+        aria-label="فيديو البانر">
+        <source
+          src="media/ssstik.io_@riyadh_byshahad_1791213442339.mp4"
+          type="video/mp4">
+        متصفحك لا يدعم تشغيل الفيديو.
+      </video>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     SEARCH
+========================================================= -->
+
+<section
+  class="search-section"
+  aria-label="البحث عن العقارات">
+
+  <div class="container">
+
+    <div class="search-panel">
+
+
+      <div class="search-header">
+
+        <div class="search-tabs">
+
+          <button
+            class="search-tab active"
+            data-purpose="بيع"
+            type="button">
+
+            للبيع
+
+          </button>
+
+
+          <button
+            class="search-tab"
+            data-purpose="إيجار"
+            type="button">
+
+            للإيجار
+
+          </button>
+
+        </div>
+
+
+        <div class="search-caption">
+
+          ابحث بين العقارات المتاحة في مختلف مدن المملكة
+
+        </div>
+
+      </div>
+
+
+      <form
+        class="search-form"
+        id="searchForm">
+
+
+        <!-- REGION -->
+
+        <div class="search-field">
+
+          <label for="region">
+            المنطقة
+          </label>
+
+          <select id="region">
+
+            <option value="">
+              جميع المناطق
+            </option>
+
+            <option value="الرياض">
+              منطقة الرياض
+            </option>
+
+            <option value="مكة">
+              منطقة مكة المكرمة
+            </option>
+
+            <option value="الشرقية">
+              المنطقة الشرقية
+            </option>
+
+            <option value="المدينة">
+              منطقة المدينة المنورة
+            </option>
+
+            <option value="القصيم">
+              منطقة القصيم
+            </option>
+
+            <option value="عسير">
+              منطقة عسير
+            </option>
+
+            <option value="تبوك">
+              منطقة تبوك
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <!-- CITY -->
+
+        <div class="search-field">
+
+          <label for="city">
+            المدينة
+          </label>
+
+          <select id="city">
+
+            <option value="">
+              جميع المدن
+            </option>
+
+            <option value="الرياض">
+              الرياض
+            </option>
+
+            <option value="جدة">
+              جدة
+            </option>
+
+            <option value="مكة">
+              مكة المكرمة
+            </option>
+
+            <option value="المدينة">
+              المدينة المنورة
+            </option>
+
+            <option value="الدمام">
+              الدمام
+            </option>
+
+            <option value="الخبر">
+              الخبر
+            </option>
+
+            <option value="الظهران">
+              الظهران
+            </option>
+
+            <option value="الطائف">
+              الطائف
+            </option>
+
+            <option value="أبها">
+              أبها
+            </option>
+
+            <option value="خميس مشيط">
+              خميس مشيط
+            </option>
+
+            <option value="تبوك">
+              تبوك
+            </option>
+
+            <option value="بريدة">
+              بريدة
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <!-- PROPERTY TYPE -->
+
+        <div class="search-field">
+
+          <label for="propertyType">
+            نوع العقار
+          </label>
+
+          <select id="propertyType">
+
+            <option value="">
+              جميع أنواع العقارات
+            </option>
+
+            <option value="فيلا">
+              فيلا
+            </option>
+
+            <option value="شقة">
+              شقة
+            </option>
+
+            <option value="دور">
+              دور
+            </option>
+
+            <option value="دبلكس">
+              دبلكس
+            </option>
+
+            <option value="عمارة">
+              عمارة
+            </option>
+
+            <option value="أرض">
+              أرض
+            </option>
+
+            <option value="مكتب">
+              مكتب
+            </option>
+
+            <option value="محل">
+              محل تجاري
+            </option>
+
+            <option value="مستودع">
+              مستودع
+            </option>
+
+            <option value="استراحة">
+              استراحة
+            </option>
+
+            <option value="شاليه">
+              شاليه
+            </option>
+
+            <option value="مزرعة">
+              مزرعة
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <!-- MAX PRICE -->
+
+        <div class="search-field">
+
+          <label for="maxPrice">
+            الحد الأعلى للسعر
+          </label>
+
+          <input
+            type="number"
+            id="maxPrice"
+            min="0"
+            inputmode="numeric"
+            placeholder="مثال: 1,500,000">
+
+        </div>
+
+
+        <!-- BUTTON -->
+
+        <button
+          class="search-button"
+          type="submit">
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2">
+
+            <circle
+              cx="11"
+              cy="11"
+              r="7">
+            </circle>
+
+            <path
+              d="M20 20l-4-4">
+            </path>
+
+          </svg>
+
+          بحث
+
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     QUICK STATS
+========================================================= -->
+
+<section class="quick-stats">
+
+  <div class="container">
+
+    <div class="stats-grid">
+
+
+      <div class="stat-card">
+
+        <div class="stat-icon">
+          🏠
+        </div>
+
+        <div>
+
+          <span class="stat-number">
+            +12
+          </span>
+
+          <span class="stat-label">
+            نوعاً من العقارات
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <div class="stat-card">
+
+        <div class="stat-icon">
+          📍
+        </div>
+
+        <div>
+
+          <span class="stat-number">
+            13
+          </span>
+
+          <span class="stat-label">
+            منطقة في المملكة
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <div class="stat-card">
+
+        <div class="stat-icon">
+          🔑
+        </div>
+
+        <div>
+
+          <span class="stat-number">
+            بيع وإيجار
+          </span>
+
+          <span class="stat-label">
+            خيارات تناسب احتياجك
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <div class="stat-card">
+
+        <div class="stat-icon">
+          🔎
+        </div>
+
+        <div>
+
+          <span class="stat-number">
+            بحث سريع
+          </span>
+
+          <span class="stat-label">
+            للوصول إلى عقارك
+          </span>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     CATEGORIES
+========================================================= -->
+
+<section
+  class="section section-soft"
+  id="categories">
+
+  <div class="container">
+
+
+    <div class="section-header">
+
+      <div>
+
+        <span class="section-eyebrow">
+          أنواع العقارات
+        </span>
+
+        <h2>
+          ماذا تبحث عنه؟
+        </h2>
+
+        <p>
+          اختر نوع العقار المناسب لك وابدأ البحث.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="categories-grid">
+
+
+      <div
+        class="category-card"
+        data-type="فيلا"
+        role="button"
+        tabindex="0">
+
+        <div class="category-icon">
+          🏡
+        </div>
+
+        <h3>
+          فلل
+        </h3>
+
+        <p>
+          فلل سكنية وعصرية
+        </p>
+
+      </div>
+
+
+      <div
+        class="category-card"
+        data-type="شقة"
+        role="button"
+        tabindex="0">
+
+        <div class="category-icon">
+          🏢
+        </div>
+
+        <h3>
+          شقق
+        </h3>
+
+        <p>
+          شقق للبيع والإيجار
+        </p>
+
+      </div>
+
+
+      <div
+        class="category-card"
+        data-type="دور"
+        role="button"
+        tabindex="0">
+
+        <div class="category-icon">
+          🏠
+        </div>
+
+        <h3>
+          أدوار
+        </h3>
+
+        <p>
+          أدوار سكنية مستقلة
+        </p>
+
+      </div>
+
+
+      <div
+        class="category-card"
+        data-type="أرض"
+        role="button"
+        tabindex="0">
+
+        <div class="category-icon">
+          📐
+        </div>
+
+        <h3>
+          أراضٍ
+        </h3>
+
+        <p>
+          سكنية وتجارية
+        </p>
+
+      </div>
+
+
+      <div
+        class="category-card"
+        data-type="عمارة"
+        role="button"
+        tabindex="0">
+
+        <div class="category-icon">
+          🏙️
+        </div>
+
+        <h3>
+          عمائر
+        </h3>
+
+        <p>
+          عقارات استثمارية
+        </p>
+
+      </div>
+
+
+      <div
+        class="category-card"
+        data-type="مكتب"
+        role="button"
+        tabindex="0">
+
+        <div class="category-icon">
+          🏢
+        </div>
+
+        <h3>
+          مكاتب
+        </h3>
+
+        <p>
+          مكاتب ومساحات عمل
+        </p>
+
+      </div>
+
+
+      <div
+        class="category-card"
+        data-type="محل"
+        role="button"
+        tabindex="0">
+
+        <div class="category-icon">
+          🏬
+        </div>
+
+        <h3>
+          محلات
+        </h3>
+
+        <p>
+          محلات تجارية
+        </p>
+
+      </div>
+
+
+      <div
+        class="category-card"
+        data-type="مستودع"
+        role="button"
+        tabindex="0">
+
+        <div class="category-icon">
+          🏭
+        </div>
+
+        <h3>
+          مستودعات
+        </h3>
+
+        <p>
+          مستودعات ولوجستيات
+        </p>
+
+      </div>
+
+
+      <div
+        class="category-card"
+        data-type="استراحة"
+        role="button"
+        tabindex="0">
+
+        <div class="category-icon">
+          🌴
+        </div>
+
+        <h3>
+          استراحات
+        </h3>
+
+        <p>
+          استراحات عائلية
+        </p>
+
+      </div>
+
+
+      <div
+        class="category-card"
+        data-type="شاليه"
+        role="button"
+        tabindex="0">
+
+        <div class="category-icon">
+          🌊
+        </div>
+
+        <h3>
+          شاليهات
+        </h3>
+
+        <p>
+          شاليهات ومنتجعات
+        </p>
+
+      </div>
+
+
+      <div
+        class="category-card"
+        data-type="مزرعة"
+        role="button"
+        tabindex="0">
+
+        <div class="category-icon">
+          🌱
+        </div>
+
+        <h3>
+          مزارع
+        </h3>
+
+        <p>
+          مزارع وأراضٍ زراعية
+        </p>
+
+      </div>
+
+
+      <div
+        class="category-card"
+        data-type=""
+        role="button"
+        tabindex="0">
+
+        <div class="category-icon">
+          🔎
+        </div>
+
+        <h3>
+          جميع العقارات
+        </h3>
+
+        <p>
+          استعرض كل الخيارات
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROPERTIES
+========================================================= -->
+
+<section
+  class="section"
+  id="properties">
+
+  <div class="container">
+
+
+    <div class="section-header">
+
+      <div>
+
+        <span class="section-eyebrow">
+          أحدث العروض
+        </span>
+
+        <h2>
+          عقارات مختارة لك
+        </h2>
+
+        <p>
+          استكشف مجموعة متنوعة من العقارات في مدن المملكة.
+        </p>
+
+      </div>
+
+
+      <a
+        href="#properties"
+        class="section-link"
+        id="resetSearch">
+
+        عرض جميع العقارات ←
+
+      </a>
+
+    </div>
+
+
+    <div class="property-toolbar">
+
+      <div
+        class="property-filter-info"
+        id="resultsText">
+
+        جاري تحميل العقارات...
+
+      </div>
+
+
+      <button
+        type="button"
+        class="clear-filter"
+        id="clearFilter">
+
+        إزالة عوامل التصفية ×
+
+      </button>
+
+    </div>
+
+
+    <div
+      class="property-grid"
+      id="propertyGrid">
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     CITIES
+========================================================= -->
+
+<section
+  class="section section-soft"
+  id="cities">
+
+  <div class="container">
+
+
+    <div class="section-header">
+
+      <div>
+
+        <span class="section-eyebrow">
+          عقارات المملكة
+        </span>
+
+        <h2>
+          ابحث حسب المدينة
+        </h2>
+
+        <p>
+          استكشف العقارات في أبرز مدن المملكة العربية السعودية.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="cities-grid">
+
+
+      <div
+        class="city-card"
+        data-city="الرياض"
+        role="button"
+        tabindex="0">
+
+        <div class="city-content">
+
+          <h3>
+            الرياض
+          </h3>
+
+          <span>
+            استكشف عقارات العاصمة
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <div
+        class="city-card"
+        data-city="جدة"
+        role="button"
+        tabindex="0">
+
+        <div class="city-content">
+
+          <h3>
+            جدة
+          </h3>
+
+          <span>
+            عقارات عروس البحر الأحمر
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <div
+        class="city-card"
+        data-city="مكة"
+        role="button"
+        tabindex="0">
+
+        <div class="city-content">
+
+          <h3>
+            مكة المكرمة
+          </h3>
+
+          <span>
+            عقارات مكة
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <div
+        class="city-card"
+        data-city="المدينة"
+        role="button"
+        tabindex="0">
+
+        <div class="city-content">
+
+          <h3>
+            المدينة المنورة
+          </h3>
+
+          <span>
+            عقارات المدينة
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <div
+        class="city-card"
+        data-city="الخبر"
+        role="button"
+        tabindex="0">
+
+        <div class="city-content">
+
+          <h3>
+            الخبر
+          </h3>
+
+          <span>
+            عقارات المنطقة الشرقية
+          </span>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     WHY SOKNANA
+========================================================= -->
+
+<section
+  class="section"
+  id="why-us">
+
+  <div class="container">
+
+
+    <div class="section-header">
+
+      <div>
+
+        <span class="section-eyebrow">
+          لماذا سوكنانا؟
+        </span>
+
+        <h2>
+          رحلة عقارية أبسط
+        </h2>
+
+        <p>
+          صممنا سوكنانا لتسهيل الوصول إلى العقار المناسب.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="why-grid">
+
+
+      <div class="why-card">
+
+        <div class="why-icon">
+          🔎
+        </div>
+
+        <h3>
+          بحث عقاري متقدم
+        </h3>
+
+        <p>
+
+          ابحث حسب المنطقة والمدينة ونوع العقار
+          والسعر والغرض من العقار للوصول إلى النتائج
+          التي تناسب احتياجك.
+
+        </p>
+
+      </div>
+
+
+      <div class="why-card">
+
+        <div class="why-icon">
+          🇸🇦
+        </div>
+
+        <h3>
+          جميع مناطق المملكة
+        </h3>
+
+        <p>
+
+          منصة مصممة للسوق السعودي وتتيح استعراض
+          العقارات في مختلف مناطق ومدن المملكة.
+
+        </p>
+
+      </div>
+
+
+      <div class="why-card">
+
+        <div class="why-icon">
+          ♡
+        </div>
+
+        <h3>
+          حفظ العقارات المفضلة
+        </h3>
+
+        <p>
+
+          احتفظ بالعقارات التي تهمك للرجوع إليها
+          ومقارنتها بسهولة أثناء رحلة البحث.
+
+        </p>
+
+      </div>
+
+
+      <div class="why-card">
+
+        <div class="why-icon">
+          ⚡
+        </div>
+
+        <h3>
+          تجربة سهلة وسريعة
+        </h3>
+
+        <p>
+
+          تصميم متجاوب يعمل على الجوال والكمبيوتر
+          ليساعدك في الوصول إلى المعلومات بسرعة.
+
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     OWNER CTA
+========================================================= -->
+
+<section class="owner-section">
+
+  <div class="container">
+
+    <div class="owner-box">
+
+
+      <div class="owner-content">
+
+        <span>
+          للملاك والمسوقين العقاريين
+        </span>
+
+        <h2>
+          لديك عقار ترغب في عرضه؟
+        </h2>
+
+        <p>
+
+          أضف عقارك إلى سوكنانا وابدأ في الوصول
+          إلى الباحثين عن العقارات في مختلف مدن المملكة.
+
+        </p>
+
+      </div>
+
+
+      <a
+        href="mailto:info@soknana.com?subject=طلب إضافة عقار في سوكنانا"
+        class="owner-button">
+
+        + أضف عقارك الآن
+
+      </a>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<div id="footer-container"></div>
+
+
+<script>
+
+/* =========================================================
+   LOAD HEADER & FOOTER
+========================================================= */
+
+async function loadComponent(
+  file,
+  containerId
+) {
+
+  const container =
+    document.getElementById(
+      containerId
+    );
+
+
+  if (!container) {
+    return;
+  }
+
+
+  try {
+
+    const response =
+      await fetch(file);
+
+
+    if (!response.ok) {
+
+      throw new Error(
+        "Failed to load " + file
+      );
+
+    }
+
+
+    const html =
+      await response.text();
+
+
+    const template =
+      document.createElement(
+        "template"
+      );
+
+
+    template.innerHTML =
+      html;
+
+
+    const scripts =
+      Array.from(
+        template.content
+          .querySelectorAll("script")
+      );
+
+
+    scripts.forEach(
+      script => script.remove()
+    );
+
+
+    container.replaceChildren(
+      template.content.cloneNode(true)
+    );
+
+
+    scripts.forEach(
+      oldScript => {
+
+        const newScript =
+          document.createElement(
+            "script"
+          );
+
+
+        Array
+          .from(
+            oldScript.attributes
+          )
+          .forEach(
+            attribute => {
+
+              newScript.setAttribute(
+                attribute.name,
+                attribute.value
+              );
+
+            }
+          );
+
+
+        newScript.textContent =
+          oldScript.textContent;
+
+
+        container.appendChild(
+          newScript
+        );
+
+      }
+    );
+
+
+  } catch (error) {
+
+    console.error(error);
+
+
+    container.innerHTML = `
+
+      <div style="
+        padding:15px;
+        text-align:center;
+        background:#fff3f3;
+        color:#a33;
+        font-family:Tahoma,Arial;
+      ">
+
+        تعذر تحميل ${file}.
+        تأكد من تشغيل المشروع من خلال خادم محلي.
+
+      </div>
+
+    `;
+
+  }
+
+}
+
+
+/* =========================================================
+   DEMO PROPERTY DATA
+========================================================= */
+
+const properties = [
+
+  {
+
+    id: 1001,
+
+    title:
+      "فيلا عصرية بتصميم فاخر",
+
+    region:
+      "الرياض",
+
+    city:
+      "الرياض",
+
+    district:
+      "حي الياسمين",
+
+    type:
+      "فيلا",
+
+    purpose:
+      "بيع",
+
+    price:
+      1850000,
+
+    area:
+      375,
+
+    beds:
+      5,
+
+    baths:
+      4,
+
+    featured:
+      true,
+
+    image:
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80"
+
+  },
+
+
+  {
+
+    id: 1002,
+
+    title:
+      "شقة حديثة بموقع مميز",
+
+    region:
+      "مكة",
+
+    city:
+      "جدة",
+
+    district:
+      "حي السلامة",
+
+    type:
+      "شقة",
+
+    purpose:
+      "إيجار",
+
+    price:
+      55000,
+
+    area:
+      160,
+
+    beds:
+      3,
+
+    baths:
+      2,
+
+    featured:
+      true,
+
+    image:
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80"
+
+  },
+
+
+  {
+
+    id: 1003,
+
+    title:
+      "أرض سكنية بموقع مميز",
+
+    region:
+      "الرياض",
+
+    city:
+      "الرياض",
+
+    district:
+      "حي النرجس",
+
+    type:
+      "أرض",
+
+    purpose:
+      "بيع",
+
+    price:
+      950000,
+
+    area:
+      450,
+
+    beds:
+      null,
+
+    baths:
+      null,
+
+    featured:
+      false,
+
+    image:
+      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80"
+
+  },
+
+
+  {
+
+    id: 1004,
+
+    title:
+      "فيلا فاخرة بمسبح خاص",
+
+    region:
+      "الشرقية",
+
+    city:
+      "الخبر",
+
+    district:
+      "حي الحزام الذهبي",
+
+    type:
+      "فيلا",
+
+    purpose:
+      "بيع",
+
+    price:
+      2400000,
+
+    area:
+      520,
+
+    beds:
+      6,
+
+    baths:
+      5,
+
+    featured:
+      true,
+
+    image:
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80"
+
+  },
+
+
+  {
+
+    id: 1005,
+
+    title:
+      "مكتب تجاري في قلب الرياض",
+
+    region:
+      "الرياض",
+
+    city:
+      "الرياض",
+
+    district:
+      "حي العليا",
+
+    type:
+      "مكتب",
+
+    purpose:
+      "إيجار",
+
+    price:
+      90000,
+
+    area:
+      180,
+
+    beds:
+      null,
+
+    baths:
+      2,
+
+    featured:
+      false,
+
+    image:
+      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80"
+
+  },
+
+
+  {
+
+    id: 1006,
+
+    title:
+      "استراحة عائلية بمساحات واسعة",
+
+    region:
+      "الشرقية",
+
+    city:
+      "الدمام",
+
+    district:
+      "ضاحية الملك فهد",
+
+    type:
+      "استراحة",
+
+    purpose:
+      "بيع",
+
+    price:
+      780000,
+
+    area:
+      600,
+
+    beds:
+      3,
+
+    baths:
+      3,
+
+    featured:
+      false,
+
+    image:
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80"
+
+  },
+
+
+  {
+
+    id: 1007,
+
+    title:
+      "عمارة استثمارية",
+
+    region:
+      "مكة",
+
+    city:
+      "جدة",
+
+    district:
+      "حي الصفا",
+
+    type:
+      "عمارة",
+
+    purpose:
+      "بيع",
+
+    price:
+      3200000,
+
+    area:
+      650,
+
+    beds:
+      null,
+
+    baths:
+      null,
+
+    featured:
+      true,
+
+    image:
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80"
+
+  },
+
+
+  {
+
+    id: 1008,
+
+    title:
+      "شقة سكنية بالقرب من الخدمات",
+
+    region:
+      "المدينة",
+
+    city:
+      "المدينة",
+
+    district:
+      "حي العزيزية",
+
+    type:
+      "شقة",
+
+    purpose:
+      "إيجار",
+
+    price:
+      42000,
+
+    area:
+      145,
+
+    beds:
+      3,
+
+    baths:
+      2,
+
+    featured:
+      false,
+
+    image:
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=900&q=80"
+
+  },
+
+
+  {
+
+    id: 1009,
+
+    title:
+      "مزرعة بمساحة كبيرة",
+
+    region:
+      "القصيم",
+
+    city:
+      "بريدة",
+
+    district:
+      "شمال بريدة",
+
+    type:
+      "مزرعة",
+
+    purpose:
+      "بيع",
+
+    price:
+      1100000,
+
+    area:
+      5000,
+
+    beds:
+      null,
+
+    baths:
+      null,
+
+    featured:
+      false,
+
+    image:
+      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80"
+
+  }
+
+];
+
+
+/* =========================================================
+   APPLICATION STATE
+========================================================= */
+
+let currentPurpose =
+  "بيع";
+
+
+let activeFilters = {
+
+  region:
+    "",
+
+  city:
+    "",
+
+  type:
+    "",
+
+  maxPrice:
+    null
+
+};
+
+
+/* =========================================================
+   FAVORITES
+========================================================= */
+
+function getFavorites() {
+
+  try {
+
+    return JSON.parse(
+      localStorage.getItem(
+        "soknanaFavorites"
+      )
+    ) || [];
+
+  } catch {
+
+    return [];
+
+  }
+
+}
+
+
+function toggleFavorite(id) {
+
+  let favorites =
+    getFavorites();
+
+
+  if (
+    favorites.includes(id)
+  ) {
+
+    favorites =
+      favorites.filter(
+        item => item !== id
+      );
+
+  } else {
+
+    favorites.push(id);
+
+  }
+
+
+  localStorage.setItem(
+    "soknanaFavorites",
+    JSON.stringify(favorites)
+  );
+
+
+  renderFilteredProperties();
+
+}
+
+
+/* =========================================================
+   FORMAT PRICE
+========================================================= */
+
+const priceFormatter =
+  new Intl.NumberFormat(
+    "ar-SA"
+  );
+
+
+function formatPrice(
+  price
+) {
+
+  return priceFormatter
+    .format(price);
+
+}
+
+
+/* =========================================================
+   RENDER PROPERTIES
+========================================================= */
+
+function renderProperties(
+  items
+) {
+
+  const grid =
+    document.getElementById(
+      "propertyGrid"
+    );
+
+
+  const results =
+    document.getElementById(
+      "resultsText"
+    );
+
+
+  const clearFilter =
+    document.getElementById(
+      "clearFilter"
+    );
+
+
+  if (!grid) {
+    return;
+  }
+
+
+  grid.replaceChildren();
+
+
+  results.innerHTML = `
+
+    تم العثور على
+
+    <strong>
+      ${items.length}
+    </strong>
+
+    عقار مطابق
+
+  `;
+
+
+  const filtersActive =
+    activeFilters.region ||
+    activeFilters.city ||
+    activeFilters.type ||
+    activeFilters.maxPrice !== null;
+
+
+  clearFilter.classList.toggle(
+    "show",
+    Boolean(filtersActive)
+  );
+
+
+  if (!items.length) {
+
+    grid.innerHTML = `
+
+      <div class="empty-state">
+
+        <div class="empty-icon">
+          🔎
+        </div>
+
+        <h3>
+          لم نجد عقارات مطابقة
+        </h3>
+
+        <p>
+
+          جرّب تغيير المدينة أو نوع العقار
+          أو الحد الأعلى للسعر.
+
+        </p>
+
+      </div>
+
+    `;
+
+    return;
+
+  }
+
+
+  const favorites =
+    getFavorites();
+
+
+  items.forEach(
+    property => {
+
+
+      const card =
+        document.createElement(
+          "article"
+        );
+
+
+      card.className =
+        "property-card";
+
+
+      const isFavorite =
+        favorites.includes(
+          property.id
+        );
+
+
+      const features = [];
+
+
+      features.push(
+        `📐 ${formatPrice(property.area)} م²`
+      );
+
+
+      if (
+        property.beds !== null
+      ) {
+
+        features.push(
+          `🛏 ${property.beds} غرف`
+        );
+
+      }
+
+
+      if (
+        property.baths !== null
+      ) {
+
+        features.push(
+          `🚿 ${property.baths} حمامات`
+        );
+
+      }
+
+
+      const rentPeriod =
+        property.purpose === "إيجار"
+          ? " / سنوياً"
+          : "";
+
+
+      card.innerHTML = `
+
+        <div class="property-image">
+
+          <img
+            src="${property.image}"
+            alt="${property.title}"
+            loading="lazy">
+
+          <div class="property-overlay">
+          </div>
+
+
+          <div class="property-badges">
+
+            <span class="property-badge">
+
+              ${
+                property.purpose === "بيع"
+                  ? "للبيع"
+                  : "للإيجار"
+              }
+
+            </span>
+
+
+            ${
+              property.featured
+                ? `
+                  <span
+                    class="property-badge featured">
+
+                    مميز
+
+                  </span>
+                `
+                : ""
+            }
+
+          </div>
+
+
+          <button
+            type="button"
+            class="
+              favorite-button
+              ${isFavorite ? "active" : ""}
+            "
+            data-favorite-id="${property.id}"
+            aria-label="إضافة العقار للمفضلة">
+
+            ${
+              isFavorite
+                ? "♥"
+                : "♡"
+            }
+
+          </button>
+
+        </div>
+
+
+        <div class="property-body">
+
+
+          <div class="property-topline">
+
+            <div class="property-price">
+
+              ${formatPrice(property.price)}
+
+              <small>
+                ر.س${rentPeriod}
+              </small>
+
+            </div>
+
+
+            <span class="property-type">
+
+              ${property.type}
+
+            </span>
+
+          </div>
+
+
+          <h3 class="property-title">
+
+            ${property.title}
+
+          </h3>
+
+
+          <div class="property-location">
+
+            📍
+            ${property.city}
+            -
+            ${property.district}
+
+          </div>
+
+
+          <div class="property-features">
+
+            ${
+              features
+                .map(
+                  feature =>
+                    `<span>${feature}</span>`
+                )
+                .join("")
+            }
+
+          </div>
+
+
+          <div class="property-footer">
+
+            <a
+              class="property-details"
+              href="mailto:info@soknana.com?subject=${encodeURIComponent(
+                "استفسار عن العقار رقم " +
+                property.id
+              )}">
+
+              عرض تفاصيل العقار
+
+            </a>
+
+
+            <span class="property-id">
+
+              #${property.id}
+
+            </span>
+
+          </div>
+
+
+        </div>
+
+      `;
+
+
+      grid.appendChild(
+        card
+      );
+
+    }
+  );
+
+
+  document
+    .querySelectorAll(
+      "[data-favorite-id]"
+    )
+    .forEach(
+      button => {
+
+        button.addEventListener(
+          "click",
+          function () {
+
+            toggleFavorite(
+              Number(
+                button.dataset.favoriteId
+              )
+            );
+
+          }
+        );
+
+      }
+    );
+
+}
+
+
+/* =========================================================
+   FILTER PROPERTIES
+========================================================= */
+
+function renderFilteredProperties() {
+
+  const filtered =
+    properties.filter(
+      property => {
+
+
+        const purposeMatch =
+          property.purpose ===
+          currentPurpose;
+
+
+        const regionMatch =
+          !activeFilters.region ||
+          property.region ===
+          activeFilters.region;
+
+
+        const cityMatch =
+          !activeFilters.city ||
+          property.city ===
+          activeFilters.city;
+
+
+        const typeMatch =
+          !activeFilters.type ||
+          property.type ===
+          activeFilters.type;
+
+
+        const priceMatch =
+          activeFilters.maxPrice === null ||
+          property.price <=
+          activeFilters.maxPrice;
+
+
+        return (
+
+          purposeMatch &&
+          regionMatch &&
+          cityMatch &&
+          typeMatch &&
+          priceMatch
+
+        );
+
+      }
+    );
+
+
+  renderProperties(
+    filtered
+  );
+
+}
+
+
+/* =========================================================
+   PURPOSE
+========================================================= */
+
+function setPurpose(
+  purpose
+) {
+
+  currentPurpose =
+    purpose;
+
+
+  document
+    .querySelectorAll(
+      ".search-tab"
+    )
+    .forEach(
+      button => {
+
+        const active =
+          button.dataset.purpose ===
+          purpose;
+
+
+        button.classList.toggle(
+          "active",
+          active
+        );
+
+
+        button.setAttribute(
+          "aria-pressed",
+          String(active)
+        );
+
+      }
+    );
+
+
+  renderFilteredProperties();
+
+}
+
+
+/* =========================================================
+   SELECT TYPE
+========================================================= */
+
+function selectPropertyType(
+  type
+) {
+
+  const select =
+    document.getElementById(
+      "propertyType"
+    );
+
+
+  if (select) {
+
+    select.value =
+      type;
+
+  }
+
+
+  activeFilters.type =
+    type;
+
+
+  renderFilteredProperties();
+
+
+  document
+    .getElementById(
+      "properties"
+    )
+    ?.scrollIntoView({
+      behavior:
+        "smooth"
+    });
+
+}
+
+
+/* =========================================================
+   SELECT CITY
+========================================================= */
+
+function selectCity(
+  city
+) {
+
+  const citySelect =
+    document.getElementById(
+      "city"
+    );
+
+
+  if (citySelect) {
+
+    citySelect.value =
+      city;
+
+  }
+
+
+  activeFilters.city =
+    city;
+
+
+  renderFilteredProperties();
+
+
+  document
+    .getElementById(
+      "properties"
+    )
+    ?.scrollIntoView({
+      behavior:
+        "smooth"
+    });
+
+}
+
+
+/* =========================================================
+   RESET FILTERS
+========================================================= */
+
+function resetFilters() {
+
+  const form =
+    document.getElementById(
+      "searchForm"
+    );
+
+
+  if (form) {
+
+    form.reset();
+
+  }
+
+
+  activeFilters = {
+
+    region:
+      "",
+
+    city:
+      "",
+
+    type:
+      "",
+
+    maxPrice:
+      null
+
+  };
+
+
+  setPurpose(
+    "بيع"
+  );
+
+}
+
+
+/* =========================================================
+   SEARCH EVENTS
+========================================================= */
+
+document
+  .querySelectorAll(
+    ".search-tab"
+  )
+  .forEach(
+    button => {
+
+      button.addEventListener(
+        "click",
+        function () {
+
+          setPurpose(
+            button.dataset.purpose
+          );
+
+        }
+      );
+
+    }
+  );
+
+
+document
+  .getElementById(
+    "searchForm"
+  )
+  .addEventListener(
+    "submit",
+    function (event) {
+
+      event.preventDefault();
+
+
+      activeFilters.region =
+        document.getElementById(
+          "region"
+        ).value;
+
+
+      activeFilters.city =
+        document.getElementById(
+          "city"
+        ).value;
+
+
+      activeFilters.type =
+        document.getElementById(
+          "propertyType"
+        ).value;
+
+
+      const priceValue =
+        document.getElementById(
+          "maxPrice"
+        ).value;
+
+
+      activeFilters.maxPrice =
+        priceValue === ""
+          ? null
+          : Number(priceValue);
+
+
+      renderFilteredProperties();
+
+
+      document
+        .getElementById(
+          "properties"
+        )
+        .scrollIntoView({
+          behavior:
+            "smooth"
+        });
+
+    }
+  );
+
+
+/* =========================================================
+   CATEGORY EVENTS
+========================================================= */
+
+document
+  .querySelectorAll(
+    ".category-card"
+  )
+  .forEach(
+    category => {
+
+
+      const activate =
+        function () {
+
+          selectPropertyType(
+            category.dataset.type
+          );
+
+        };
+
+
+      category.addEventListener(
+        "click",
+        activate
+      );
+
+
+      category.addEventListener(
+        "keydown",
+        function (event) {
+
+          if (
+            event.key === "Enter" ||
+            event.key === " "
+          ) {
+
+            event.preventDefault();
+
+            activate();
+
+          }
+
+        }
+      );
+
+    }
+  );
+
+
+/* =========================================================
+   CITY EVENTS
+========================================================= */
+
+document
+  .querySelectorAll(
+    ".city-card"
+  )
+  .forEach(
+    cityCard => {
+
+
+      const activate =
+        function () {
+
+          selectCity(
+            cityCard.dataset.city
+          );
+
+        };
+
+
+      cityCard.addEventListener(
+        "click",
+        activate
+      );
+
+
+      cityCard.addEventListener(
+        "keydown",
+        function (event) {
+
+          if (
+            event.key === "Enter" ||
+            event.key === " "
+          ) {
+
+            event.preventDefault();
+
+            activate();
+
+          }
+
+        }
+      );
+
+    }
+  );
+
+
+/* =========================================================
+   RESET EVENTS
+========================================================= */
+
+document
+  .getElementById(
+    "resetSearch"
+  )
+  .addEventListener(
+    "click",
+    function (event) {
+
+      event.preventDefault();
+
+      resetFilters();
+
+    }
+  );
+
+
+document
+  .getElementById(
+    "clearFilter"
+  )
+  .addEventListener(
+    "click",
+    resetFilters
+  );
+
+
+/* =========================================================
+   READ FILTERS FROM HEADER / FOOTER
+========================================================= */
+
+function applyStoredFilters() {
+
+  const storedType =
+    sessionStorage.getItem(
+      "soknanaPropertyType"
+    );
+
+
+  const storedPurpose =
+    sessionStorage.getItem(
+      "soknanaPropertyPurpose"
+    );
+
+
+  const storedCity =
+    sessionStorage.getItem(
+      "soknanaPropertyCity"
+    );
+
+
+  let hasStoredFilter =
+    false;
+
+
+  if (storedType !== null) {
+
+    activeFilters.type =
+      storedType;
+
+
+    const propertyType =
+      document.getElementById(
+        "propertyType"
+      );
+
+
+    if (
+      propertyType &&
+      Array
+        .from(propertyType.options)
+        .some(
+          option =>
+            option.value ===
+            storedType
+        )
+    ) {
+
+      propertyType.value =
+        storedType;
+
+    }
+
+
+    sessionStorage.removeItem(
+      "soknanaPropertyType"
+    );
+
+
+    hasStoredFilter =
+      true;
+
+  }
+
+
+  if (storedPurpose) {
+
+    currentPurpose =
+      storedPurpose;
+
+
+    sessionStorage.removeItem(
+      "soknanaPropertyPurpose"
+    );
+
+
+    hasStoredFilter =
+      true;
+
+  }
+
+
+  if (storedCity) {
+
+    activeFilters.city =
+      storedCity;
+
+
+    const city =
+      document.getElementById(
+        "city"
+      );
+
+
+    if (
+      city &&
+      Array
+        .from(city.options)
+        .some(
+          option =>
+            option.value ===
+            storedCity
+        )
+    ) {
+
+      city.value =
+        storedCity;
+
+    }
+
+
+    sessionStorage.removeItem(
+      "soknanaPropertyCity"
+    );
+
+
+    hasStoredFilter =
+      true;
+
+  }
+
+
+  document
+    .querySelectorAll(
+      ".search-tab"
+    )
+    .forEach(
+      button => {
+
+        button.classList.toggle(
+          "active",
+          button.dataset.purpose ===
+          currentPurpose
+        );
+
+      }
+    );
+
+
+  renderFilteredProperties();
+
+
+  return hasStoredFilter;
+
+}
+
+
+/* =========================================================
+   INITIALIZATION
+========================================================= */
+
+async function initializeSoknana() {
+
+
+  await Promise.all([
+
+    loadComponent(
+      "header.html",
+      "header-container"
+    ),
+
+    loadComponent(
+      "footer.html",
+      "footer-container"
+    )
+
+  ]);
+
+
+  const hasStoredFilter =
+    applyStoredFilters();
+
+
+  if (hasStoredFilter) {
+
+    requestAnimationFrame(
+      function () {
+
+        document
+          .getElementById(
+            "properties"
+          )
+          ?.scrollIntoView();
+
+      }
+    );
+
+    return;
+
+  }
+
+
+  if (
+    window.location.hash
+  ) {
+
+    const target =
+      document.getElementById(
+        decodeURIComponent(
+          window.location.hash
+            .substring(1)
+        )
+      );
+
+
+    if (target) {
+
+      requestAnimationFrame(
+        function () {
+
+          target.scrollIntoView();
+
+        }
+      );
+
+    }
+
+  }
+
+}
+
+
+/* =========================================================
+   START APPLICATION
+========================================================= */
+
+initializeSoknana();
+
+</script>
+
+
+</body>
+
+</html>

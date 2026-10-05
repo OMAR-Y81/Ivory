@@ -1,0 +1,1967 @@
+<!-- =========================================================
+     SOKNANA HEADER
+     منصة سوكنانا العقارية - المملكة العربية السعودية
+========================================================= -->
+
+<style>
+
+  .sk-header,
+  .sk-header * {
+    box-sizing: border-box;
+  }
+
+  .sk-header {
+    --sk-primary: #0866d5;
+    --sk-primary-dark: #03499e;
+    --sk-primary-light: #eaf4ff;
+    --sk-navy: #082d5c;
+    --sk-text: #183653;
+    --sk-muted: #6d8298;
+    --sk-border: #e3edf7;
+    --sk-white: #ffffff;
+
+    font-family: Tahoma, Arial, sans-serif;
+    direction: rtl;
+
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+
+    background: #fff;
+
+    box-shadow:
+      0 5px 25px
+      rgba(5, 47, 94, 0.08);
+  }
+
+
+  /* =========================================================
+     TOP BAR
+  ========================================================= */
+
+  .sk-topbar {
+    background:
+      linear-gradient(
+        90deg,
+        #052b58 0%,
+        #074a91 50%,
+        #052b58 100%
+      );
+
+    color: #dcecff;
+    font-size: 11px;
+  }
+
+  .sk-topbar-container {
+    max-width: 1450px;
+    margin: auto;
+
+    padding: 8px 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+  }
+
+  .sk-topbar-right,
+  .sk-topbar-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .sk-topbar-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    white-space: nowrap;
+  }
+
+  .sk-topbar-dot {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #54c2ff;
+
+    box-shadow:
+      0 0 0 4px
+      rgba(84, 194, 255, .15);
+  }
+
+  .sk-topbar a {
+    color: #dcecff;
+    text-decoration: none;
+  }
+
+  .sk-topbar a:hover {
+    color: #ffffff;
+  }
+
+
+  /* =========================================================
+     MAIN NAVBAR
+  ========================================================= */
+
+  .sk-navbar {
+    background:
+      rgba(255, 255, 255, .98);
+
+    backdrop-filter: blur(10px);
+  }
+
+  .sk-navbar-container {
+    max-width: 1450px;
+    margin: auto;
+
+    min-height: 88px;
+
+    padding: 10px 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 24px;
+  }
+
+
+  /* =========================================================
+     LOGO
+  ========================================================= */
+
+  .sk-logo {
+    display: flex;
+    align-items: center;
+
+    gap: 11px;
+
+    min-width: max-content;
+
+    text-decoration: none;
+  }
+
+
+  /* الدائرة الخارجية للشعار */
+
+  .sk-logo-circle {
+    position: relative;
+
+    width: 68px;
+    height: 68px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 3px;
+
+    border-radius: 50%;
+
+    background:
+      linear-gradient(
+        145deg,
+        #ffffff,
+        #e7f3ff
+      );
+
+    border:
+      2px solid
+      rgba(8, 102, 213, .18);
+
+    box-shadow:
+      0 7px 22px
+      rgba(5, 76, 151, .16),
+      inset 0 0 0 3px
+      rgba(255,255,255,.8);
+
+    overflow: hidden;
+
+    transition:
+      transform .25s ease,
+      box-shadow .25s ease,
+      border-color .25s ease;
+  }
+
+
+  /* حلقة زخرفية */
+
+  .sk-logo-circle::before {
+    content: "";
+
+    position: absolute;
+
+    inset: -2px;
+
+    border-radius: 50%;
+
+    border:
+      1px solid
+      rgba(69, 163, 255, .22);
+
+    pointer-events: none;
+  }
+
+
+  /* الصورة */
+
+  .sk-logo-image {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    border-radius: 50%;
+
+    background: white;
+  }
+
+
+  /* تأثير المرور */
+
+  .sk-logo:hover
+  .sk-logo-circle {
+    transform:
+      translateY(-2px)
+      scale(1.03);
+
+    border-color:
+      rgba(8, 102, 213, .38);
+
+    box-shadow:
+      0 10px 28px
+      rgba(5, 76, 151, .23);
+  }
+
+
+  /* اسم المنصة بجانب الشعار */
+
+  .sk-logo-info {
+    display: flex;
+    flex-direction: column;
+
+    line-height: 1.2;
+  }
+
+  .sk-logo-name {
+    color: var(--sk-navy);
+
+    font-size: 23px;
+    font-weight: 900;
+
+    letter-spacing: -.4px;
+  }
+
+  .sk-logo-name span {
+    color: var(--sk-primary);
+  }
+
+  .sk-logo-tagline {
+    margin-top: 5px;
+
+    color: var(--sk-muted);
+
+    font-size: 8px;
+    font-weight: 500;
+
+    white-space: nowrap;
+  }
+
+
+  /* =========================================================
+     NAVIGATION
+  ========================================================= */
+
+  .sk-nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 3px;
+
+    flex: 1;
+  }
+
+  .sk-nav-item {
+    position: relative;
+  }
+
+  .sk-nav-link {
+    min-height: 43px;
+
+    padding: 0 11px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+
+    color: var(--sk-text);
+
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    border-radius: 9px;
+
+    transition: all .2s ease;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+  }
+
+  .sk-nav-link:hover,
+  .sk-nav-link.active {
+    background:
+      var(--sk-primary-light);
+
+    color:
+      var(--sk-primary);
+  }
+
+  .sk-chevron {
+    font-size: 9px;
+
+    opacity: .6;
+
+    transition:
+      transform .2s ease;
+  }
+
+  .sk-nav-item:hover
+  .sk-chevron {
+    transform:
+      rotate(180deg);
+  }
+
+
+  /* =========================================================
+     DROPDOWN
+  ========================================================= */
+
+  .sk-dropdown {
+    position: absolute;
+
+    top: calc(100% + 10px);
+    right: 0;
+
+    min-width: 245px;
+
+    padding: 9px;
+
+    background: #ffffff;
+
+    border:
+      1px solid
+      var(--sk-border);
+
+    border-radius: 14px;
+
+    box-shadow:
+      0 18px 45px
+      rgba(7, 47, 91, .15);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform:
+      translateY(8px);
+
+    transition:
+      all .2s ease;
+  }
+
+  .sk-nav-item:hover >
+  .sk-dropdown,
+  .sk-nav-item.dropdown-open >
+  .sk-dropdown {
+    opacity: 1;
+    visibility: visible;
+
+    transform:
+      translateY(0);
+  }
+
+  .sk-dropdown-title {
+    padding:
+      8px 11px 10px;
+
+    color:
+      var(--sk-muted);
+
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .sk-dropdown a {
+    padding: 10px 11px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 11px;
+
+    border-radius: 9px;
+
+    color: #29465f;
+
+    text-decoration: none;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    transition:
+      all .15s ease;
+  }
+
+  .sk-dropdown a:hover {
+    padding-right: 15px;
+
+    background: #edf6ff;
+
+    color:
+      var(--sk-primary);
+  }
+
+  .sk-dropdown-icon {
+    width: 32px;
+    height: 32px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background:
+      var(--sk-primary-light);
+
+    font-size: 15px;
+  }
+
+
+  /* =========================================================
+     MEGA MENU
+  ========================================================= */
+
+  .sk-mega-dropdown {
+    width: 680px;
+
+    padding: 16px;
+
+    display: grid;
+
+    grid-template-columns:
+      repeat(3, 1fr);
+
+    gap: 5px;
+  }
+
+  .sk-mega-column h4 {
+    margin:
+      5px 10px 10px;
+
+    color:
+      var(--sk-navy);
+
+    font-size: 11px;
+  }
+
+  .sk-mega-column a {
+    padding: 9px 10px;
+  }
+
+
+  /* =========================================================
+     CITIES
+  ========================================================= */
+
+  .sk-cities {
+    min-width: 330px;
+
+    display: grid;
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 3px;
+  }
+
+
+  /* =========================================================
+     ACTIONS
+  ========================================================= */
+
+  .sk-actions {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    min-width: max-content;
+  }
+
+  .sk-icon-btn {
+    width: 41px;
+    height: 41px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border:
+      1px solid
+      var(--sk-border);
+
+    border-radius: 10px;
+
+    background: white;
+
+    color:
+      var(--sk-navy);
+
+    text-decoration: none;
+
+    transition:
+      all .2s ease;
+  }
+
+  .sk-icon-btn:hover {
+    border-color:
+      #acd3fb;
+
+    background:
+      var(--sk-primary-light);
+
+    color:
+      var(--sk-primary);
+
+    transform:
+      translateY(-1px);
+  }
+
+  .sk-icon-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+
+
+  /* LOGIN */
+
+  .sk-login-btn {
+    height: 41px;
+
+    padding: 0 13px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    border:
+      1px solid
+      var(--sk-border);
+
+    border-radius: 10px;
+
+    color:
+      var(--sk-text);
+
+    text-decoration: none;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    transition: .2s;
+  }
+
+  .sk-login-btn:hover {
+    color:
+      var(--sk-primary);
+
+    border-color:
+      #9bc8f5;
+  }
+
+
+  /* ADD PROPERTY */
+
+  .sk-add-property {
+    height: 43px;
+
+    padding: 0 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    border-radius: 10px;
+
+    background:
+      linear-gradient(
+        135deg,
+        #0872e4,
+        #0454ad
+      );
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    box-shadow:
+      0 6px 18px
+      rgba(6, 95, 194, .22);
+
+    transition:
+      all .2s ease;
+  }
+
+  .sk-add-property:hover {
+    transform:
+      translateY(-2px);
+
+    box-shadow:
+      0 9px 22px
+      rgba(6, 95, 194, .3);
+  }
+
+  .sk-add-property svg {
+    width: 16px;
+    height: 16px;
+  }
+
+
+  /* =========================================================
+     MOBILE BUTTON
+  ========================================================= */
+
+  .sk-menu-btn {
+    width: 43px;
+    height: 43px;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 0;
+
+    border-radius: 10px;
+
+    background:
+      var(--sk-primary-light);
+
+    color:
+      var(--sk-primary);
+
+    font-size: 21px;
+
+    cursor: pointer;
+  }
+
+
+  /* =========================================================
+     RESPONSIVE
+  ========================================================= */
+
+  .sk-menu-icon {
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 18px;
+  }
+
+  .sk-menu-icon span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background: currentColor;
+    transition: transform .2s ease, opacity .2s ease;
+  }
+
+  .sk-menu-icon span:nth-child(1) { top: 0; }
+  .sk-menu-icon span:nth-child(2) { top: 8px; }
+  .sk-menu-icon span:nth-child(3) { top: 16px; }
+
+  .sk-menu-btn[aria-expanded="true"] .sk-menu-icon span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .sk-menu-btn[aria-expanded="true"] .sk-menu-icon span:nth-child(2) {
+    opacity: 0;
+  }
+  .sk-menu-btn[aria-expanded="true"] .sk-menu-icon span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .sk-menu-btn:focus-visible {
+    outline: 2px solid var(--sk-primary);
+    outline-offset: 3px;
+  }
+
+  @media(max-width: 1250px) {
+
+    .sk-logo-name {
+      font-size: 20px;
+    }
+
+    .sk-logo-circle {
+      width: 61px;
+      height: 61px;
+    }
+
+    .sk-logo-tagline {
+      display: none;
+    }
+
+    .sk-nav-link {
+      padding: 0 8px;
+      font-size: 11px;
+    }
+
+    .sk-login-btn {
+      display: none;
+    }
+
+  }
+
+
+  @media(max-width: 1050px) {
+
+    .sk-menu-btn {
+      display: flex;
+    }
+
+    .sk-navbar-container {
+      min-height: 78px;
+    }
+
+    .sk-nav-links {
+      position: absolute;
+
+      top: 100%;
+      right: 0;
+      left: 0;
+
+      display: none;
+
+      max-height:
+        calc(100vh - var(--sk-menu-top, 120px) - 12px);
+      max-height: calc(100dvh - var(--sk-menu-top, 120px) - 12px);
+      overscroll-behavior: contain;
+
+      overflow-y: auto;
+
+      padding:
+        15px 5% 25px;
+
+      background: #ffffff;
+
+      border-top:
+        1px solid
+        var(--sk-border);
+
+      box-shadow:
+        0 15px 30px
+        rgba(5, 43, 86, .10);
+
+      flex-direction: column;
+
+      align-items: stretch;
+    }
+
+    .sk-nav-links.open {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .sk-nav-item {
+      width: 100%;
+    }
+
+    .sk-nav-link {
+      width: 100%;
+
+      min-height: 48px;
+
+      padding: 0 13px;
+
+      justify-content:
+        space-between;
+    }
+
+    .sk-dropdown,
+    .sk-mega-dropdown {
+      position: static;
+
+      width: 100%;
+      min-width: 0;
+
+      display: none;
+
+      opacity: 1;
+      visibility: visible;
+
+      transform: none;
+
+      margin-top: 4px;
+
+      box-shadow: none;
+
+      background: #f7fbff;
+
+      border-radius: 10px;
+    }
+
+    .sk-nav-item:hover >
+    .sk-dropdown {
+      display: none;
+    }
+
+    .sk-nav-item.dropdown-open >
+    .sk-dropdown {
+      display: block;
+    }
+
+    .sk-nav-item.dropdown-open >
+    .sk-mega-dropdown {
+      display: grid;
+    }
+
+    .sk-mega-dropdown {
+      grid-template-columns:
+        1fr 1fr;
+    }
+
+    .sk-cities {
+      grid-template-columns:
+        1fr 1fr;
+    }
+
+    .sk-actions {
+      margin-right: auto;
+    }
+
+  }
+
+
+  @media(max-width: 650px) {
+
+    .sk-topbar-left {
+      display: none;
+    }
+
+    .sk-topbar-container {
+      justify-content: center;
+    }
+
+    .sk-topbar-right
+    .sk-topbar-item:last-child {
+      display: none;
+    }
+
+    .sk-navbar-container {
+      padding-left: 4%;
+      padding-right: 4%;
+
+      min-height: 73px;
+    }
+
+    .sk-logo-circle {
+      width: 54px;
+      height: 54px;
+
+      border-width: 2px;
+    }
+
+    .sk-logo-name {
+      font-size: 19px;
+    }
+
+    .sk-logo-tagline {
+      display: none;
+    }
+
+    .sk-icon-btn {
+      display: none;
+    }
+
+    .sk-add-property {
+      width: 42px;
+
+      padding: 0;
+    }
+
+    .sk-add-text {
+      display: none;
+    }
+
+    .sk-add-property svg {
+      width: 19px;
+      height: 19px;
+    }
+
+    .sk-mega-dropdown {
+      grid-template-columns: 1fr;
+    }
+
+    .sk-cities {
+      grid-template-columns: 1fr;
+    }
+
+  }
+
+
+  @media(max-width: 400px) {
+
+    .sk-logo-info {
+      display: none;
+    }
+
+    .sk-logo-circle {
+      width: 52px;
+      height: 52px;
+    }
+
+  }
+
+</style>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header
+  class="sk-header"
+  id="skHeader">
+
+
+  <!-- =======================================================
+       TOP BAR
+  ======================================================== -->
+
+  <div class="sk-topbar">
+
+    <div class="sk-topbar-container">
+
+
+      <div class="sk-topbar-right">
+
+        <div class="sk-topbar-item">
+
+          <span class="sk-topbar-dot"></span>
+
+          <span>
+            سوكنانا.. عقارك في كل المملكة
+          </span>
+
+        </div>
+
+
+        <div class="sk-topbar-item">
+
+          🏠
+          بيع • شراء • إيجار • استثمار
+
+        </div>
+
+      </div>
+
+
+      <div class="sk-topbar-left">
+
+        <div class="sk-topbar-item">
+
+          🇸🇦
+          المملكة العربية السعودية
+
+        </div>
+
+
+        <a
+          href="mailto:info@soknana.com"
+          class="sk-topbar-item">
+
+          ✉
+          info@soknana.com
+
+        </a>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+  <!-- =======================================================
+       MAIN NAVBAR
+  ======================================================== -->
+
+  <div class="sk-navbar">
+
+    <div class="sk-navbar-container">
+
+
+      <!-- ===================================================
+           LOGO
+      ==================================================== -->
+
+      <a
+        href="index.html"
+        class="sk-logo"
+        aria-label="سوكنانا - الصفحة الرئيسية">
+
+
+        <span class="sk-logo-circle">
+
+          <img
+            src="media/Logo.png"
+            alt="شعار سوكنانا"
+            class="sk-logo-image">
+
+        </span>
+
+
+        <span class="sk-logo-info">
+
+          <span class="sk-logo-name">
+
+            سوكنا<span>نا</span>
+
+          </span>
+
+          <span class="sk-logo-tagline">
+
+            منصتك العقارية في المملكة
+
+          </span>
+
+        </span>
+
+
+      </a>
+
+
+      <!-- ===================================================
+           NAVIGATION
+      ==================================================== -->
+
+      <nav
+        class="sk-nav-links"
+        id="skNavLinks"
+        aria-label="القائمة الرئيسية">
+
+
+        <!-- HOME -->
+
+        <div class="sk-nav-item">
+
+          <a
+            href="index.html"
+            class="sk-nav-link active">
+
+            الرئيسية
+
+          </a>
+
+        </div>
+
+
+        <!-- PROPERTIES -->
+
+        <div
+          class="
+            sk-nav-item
+            sk-has-dropdown
+          ">
+
+          <a
+            href="index.html#properties"
+            class="
+              sk-nav-link
+              sk-dropdown-trigger
+            ">
+
+            العقارات
+
+            <span class="sk-chevron">
+              ▼
+            </span>
+
+          </a>
+
+
+          <div
+            class="
+              sk-dropdown
+              sk-mega-dropdown
+            ">
+
+
+            <!-- RESIDENTIAL -->
+
+            <div class="sk-mega-column">
+
+              <h4>
+                العقارات السكنية
+              </h4>
+
+
+              <a
+                href="index.html#properties"
+                data-property-type="فيلا">
+
+                <span class="sk-dropdown-icon">
+                  🏡
+                </span>
+
+                فلل
+
+              </a>
+
+
+              <a
+                href="index.html#properties"
+                data-property-type="شقة">
+
+                <span class="sk-dropdown-icon">
+                  🏢
+                </span>
+
+                شقق
+
+              </a>
+
+
+              <a
+                href="index.html#properties"
+                data-property-type="دور">
+
+                <span class="sk-dropdown-icon">
+                  🏠
+                </span>
+
+                أدوار
+
+              </a>
+
+
+              <a
+                href="index.html#properties"
+                data-property-type="دبلكس">
+
+                <span class="sk-dropdown-icon">
+                  🏘️
+                </span>
+
+                دبلكسات
+
+              </a>
+
+            </div>
+
+
+            <!-- COMMERCIAL -->
+
+            <div class="sk-mega-column">
+
+              <h4>
+                العقارات التجارية
+              </h4>
+
+
+              <a
+                href="index.html#properties"
+                data-property-type="مكتب">
+
+                <span class="sk-dropdown-icon">
+                  🏢
+                </span>
+
+                مكاتب
+
+              </a>
+
+
+              <a
+                href="index.html#properties"
+                data-property-type="محل">
+
+                <span class="sk-dropdown-icon">
+                  🏬
+                </span>
+
+                محلات تجارية
+
+              </a>
+
+
+              <a
+                href="index.html#properties"
+                data-property-type="مستودع">
+
+                <span class="sk-dropdown-icon">
+                  🏭
+                </span>
+
+                مستودعات
+
+              </a>
+
+
+              <a
+                href="index.html#properties"
+                data-property-type="عمارة">
+
+                <span class="sk-dropdown-icon">
+                  🏙️
+                </span>
+
+                عمائر
+
+              </a>
+
+            </div>
+
+
+            <!-- OTHER TYPES -->
+
+            <div class="sk-mega-column">
+
+              <h4>
+                عقارات أخرى
+              </h4>
+
+
+              <a
+                href="index.html#properties"
+                data-property-type="أرض">
+
+                <span class="sk-dropdown-icon">
+                  📐
+                </span>
+
+                أراضٍ
+
+              </a>
+
+
+              <a
+                href="index.html#properties"
+                data-property-type="استراحة">
+
+                <span class="sk-dropdown-icon">
+                  🌴
+                </span>
+
+                استراحات
+
+              </a>
+
+
+              <a
+                href="index.html#properties"
+                data-property-type="مزرعة">
+
+                <span class="sk-dropdown-icon">
+                  🌱
+                </span>
+
+                مزارع
+
+              </a>
+
+
+              <a
+                href="index.html#properties"
+                data-property-type="شاليه">
+
+                <span class="sk-dropdown-icon">
+                  🌊
+                </span>
+
+                شاليهات
+
+              </a>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+        <!-- SALE -->
+
+        <div class="sk-nav-item">
+
+          <a
+            href="index.html#properties"
+            class="sk-nav-link"
+            data-property-purpose="بيع">
+
+            للبيع
+
+          </a>
+
+        </div>
+
+
+        <!-- RENT -->
+
+        <div class="sk-nav-item">
+
+          <a
+            href="index.html#properties"
+            class="sk-nav-link"
+            data-property-purpose="إيجار">
+
+            للإيجار
+
+          </a>
+
+        </div>
+
+
+        <!-- CITIES -->
+
+        <div
+          class="
+            sk-nav-item
+            sk-has-dropdown
+          ">
+
+          <a
+            href="#"
+            class="
+              sk-nav-link
+              sk-dropdown-trigger
+            ">
+
+            مدن المملكة
+
+            <span class="sk-chevron">
+              ▼
+            </span>
+
+          </a>
+
+
+          <div
+            class="
+              sk-dropdown
+              sk-cities
+            ">
+
+
+            <a
+              href="index.html#properties"
+              data-property-city="الرياض">
+
+              📍 الرياض
+
+            </a>
+
+
+            <a
+              href="index.html#properties"
+              data-property-city="جدة">
+
+              📍 جدة
+
+            </a>
+
+
+            <a
+              href="index.html#properties"
+              data-property-city="مكة">
+
+              📍 مكة المكرمة
+
+            </a>
+
+
+            <a
+              href="index.html#properties"
+              data-property-city="المدينة">
+
+              📍 المدينة المنورة
+
+            </a>
+
+
+            <a
+              href="index.html#properties"
+              data-property-city="الدمام">
+
+              📍 الدمام
+
+            </a>
+
+
+            <a
+              href="index.html#properties"
+              data-property-city="الخبر">
+
+              📍 الخبر
+
+            </a>
+
+
+            <a
+              href="index.html#properties"
+              data-property-city="الطائف">
+
+              📍 الطائف
+
+            </a>
+
+
+            <a
+              href="index.html#properties"
+              data-property-city="أبها">
+
+              📍 أبها
+
+            </a>
+
+
+            <a
+              href="index.html#properties"
+              data-property-city="تبوك">
+
+              📍 تبوك
+
+            </a>
+
+
+            <a
+              href="index.html#properties"
+              data-property-city="بريدة">
+
+              📍 بريدة
+
+            </a>
+
+
+          </div>
+
+        </div>
+
+
+        <!-- PROJECTS -->
+
+        <div class="sk-nav-item">
+
+          <a
+            href="index.html#properties"
+            class="sk-nav-link">
+
+            المشاريع العقارية
+
+          </a>
+
+        </div>
+
+
+        <!-- MORE -->
+
+        <div
+          class="
+            sk-nav-item
+            sk-has-dropdown
+          ">
+
+          <a
+            href="#"
+            class="
+              sk-nav-link
+              sk-dropdown-trigger
+            ">
+
+            المزيد
+
+            <span class="sk-chevron">
+              ▼
+            </span>
+
+          </a>
+
+
+          <div class="sk-dropdown">
+
+            <div class="sk-dropdown-title">
+
+              اكتشف سوكنانا
+
+            </div>
+
+
+            <a href="index.html#why-us">
+
+              <span class="sk-dropdown-icon">
+                ⭐
+              </span>
+
+              لماذا سوكنانا؟
+
+            </a>
+
+
+            <a href="index.html#categories">
+
+              <span class="sk-dropdown-icon">
+                🏘️
+              </span>
+
+              تصنيفات العقارات
+
+            </a>
+
+
+            <a href="index.html#contact">
+
+              <span class="sk-dropdown-icon">
+                ☎️
+              </span>
+
+              تواصل معنا
+
+            </a>
+
+
+          </div>
+
+        </div>
+
+
+      </nav>
+
+
+      <!-- ===================================================
+           ACTIONS
+      ==================================================== -->
+
+      <div class="sk-actions">
+
+
+        <!-- FAVORITES -->
+
+        <a
+          href="#"
+          class="sk-icon-btn"
+          title="العقارات المفضلة"
+          aria-label="العقارات المفضلة">
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8">
+
+            <path
+              d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z">
+            </path>
+
+          </svg>
+
+        </a>
+
+
+        <!-- LOGIN -->
+
+        <a
+          href="#"
+          class="sk-login-btn">
+
+          <svg
+            width="17"
+            height="17"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8">
+
+            <circle
+              cx="12"
+              cy="8"
+              r="4">
+            </circle>
+
+            <path
+              d="M4 21c.8-4 3.5-6 8-6s7.2 2 8 6">
+            </path>
+
+          </svg>
+
+          دخول
+
+        </a>
+
+
+        <!-- ADD PROPERTY -->
+
+        <a
+          href="mailto:info@soknana.com?subject=إضافة عقار في سوكنانا"
+          class="sk-add-property">
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2">
+
+            <path
+              d="M12 5v14">
+            </path>
+
+            <path
+              d="M5 12h14">
+            </path>
+
+          </svg>
+
+          <span class="sk-add-text">
+
+            أضف عقارك
+
+          </span>
+
+        </a>
+
+
+        <!-- MOBILE MENU -->
+
+        <button
+          class="sk-menu-btn"
+          id="skMenuBtn"
+          type="button"
+          aria-label="فتح القائمة"
+          aria-expanded="false"
+          aria-controls="skNavLinks">
+
+          <span class="sk-menu-icon" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+
+        </button>
+
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+</header>
+
+
+<script>
+
+(function () {
+
+
+  /* =========================================================
+     MOBILE MENU
+  ========================================================= */
+
+  const menuButton =
+    document.getElementById(
+      "skMenuBtn"
+    );
+
+
+  const navigation =
+    document.getElementById(
+      "skNavLinks"
+    );
+
+
+  function updateMenuPosition() {
+    const header = menuButton.closest('.sk-header');
+    if (header) {
+      navigation.style.setProperty('--sk-menu-top', header.getBoundingClientRect().bottom + 'px');
+    }
+  }
+
+  function setMenuOpen(isOpen) {
+    if (!menuButton || !navigation) return;
+    navigation.classList.toggle('open', isOpen);
+    menuButton.setAttribute('aria-expanded', String(isOpen));
+    menuButton.setAttribute('aria-label', isOpen ? 'إغلاق القائمة' : 'فتح القائمة');
+    if (isOpen) updateMenuPosition();
+    else {
+      navigation.querySelectorAll('.dropdown-open').forEach(function (item) {
+        item.classList.remove('dropdown-open');
+      });
+    }
+  }
+
+  if (menuButton && navigation) {
+    menuButton.addEventListener('click', function () {
+      setMenuOpen(!navigation.classList.contains('open'));
+    });
+
+    document.addEventListener('click', function (event) {
+      if (navigation.classList.contains('open') &&
+          !navigation.contains(event.target) && !menuButton.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && navigation.classList.contains('open')) {
+        setMenuOpen(false);
+        menuButton.focus();
+      }
+    });
+  }
+
+
+  /* =========================================================
+     MOBILE DROPDOWNS
+  ========================================================= */
+
+  document
+    .querySelectorAll(
+      ".sk-dropdown-trigger"
+    )
+    .forEach(
+      function (trigger) {
+
+        trigger.addEventListener(
+          "click",
+          function (event) {
+
+            if (
+              window.innerWidth <= 1050
+            ) {
+
+              event.preventDefault();
+
+
+              const item =
+                trigger.closest(
+                  ".sk-nav-item"
+                );
+
+
+              document
+                .querySelectorAll(
+                  ".sk-nav-item.dropdown-open"
+                )
+                .forEach(
+                  function (openItem) {
+
+                    if (
+                      openItem !== item
+                    ) {
+
+                      openItem
+                        .classList
+                        .remove(
+                          "dropdown-open"
+                        );
+
+                    }
+
+                  }
+                );
+
+
+              item.classList.toggle(
+                "dropdown-open"
+              );
+
+            }
+
+          }
+        );
+
+      }
+    );
+
+
+  /* =========================================================
+     CLOSE MENU AFTER CLICK
+  ========================================================= */
+
+  document
+    .querySelectorAll(
+      ".sk-nav-links a:not(.sk-dropdown-trigger)"
+    )
+    .forEach(
+      function (link) {
+
+        link.addEventListener(
+          "click",
+          function () {
+
+            if (!navigation) {
+              return;
+            }
+
+
+            setMenuOpen(false);
+
+          }
+        );
+
+      }
+    );
+
+
+  /* =========================================================
+     PROPERTY TYPE
+  ========================================================= */
+
+  document
+    .querySelectorAll(
+      "[data-property-type]"
+    )
+    .forEach(
+      function (link) {
+
+        link.addEventListener(
+          "click",
+          function () {
+
+            sessionStorage.setItem(
+              "soknanaPropertyType",
+              link.dataset.propertyType
+            );
+
+          }
+        );
+
+      }
+    );
+
+
+  /* =========================================================
+     PROPERTY PURPOSE
+  ========================================================= */
+
+  document
+    .querySelectorAll(
+      "[data-property-purpose]"
+    )
+    .forEach(
+      function (link) {
+
+        link.addEventListener(
+          "click",
+          function () {
+
+            sessionStorage.setItem(
+              "soknanaPropertyPurpose",
+              link.dataset.propertyPurpose
+            );
+
+          }
+        );
+
+      }
+    );
+
+
+  /* =========================================================
+     PROPERTY CITY
+  ========================================================= */
+
+  document
+    .querySelectorAll(
+      "[data-property-city]"
+    )
+    .forEach(
+      function (link) {
+
+        link.addEventListener(
+          "click",
+          function () {
+
+            sessionStorage.setItem(
+              "soknanaPropertyCity",
+              link.dataset.propertyCity
+            );
+
+          }
+        );
+
+      }
+    );
+
+
+  /* =========================================================
+     CLOSE DROPDOWN OUTSIDE
+  ========================================================= */
+
+  document.addEventListener(
+    "click",
+    function (event) {
+
+      if (
+        !event.target.closest(
+          ".sk-has-dropdown"
+        )
+      ) {
+
+        document
+          .querySelectorAll(
+            ".sk-nav-item.dropdown-open"
+          )
+          .forEach(
+            function (item) {
+
+              item.classList.remove(
+                "dropdown-open"
+              );
+
+            }
+          );
+
+      }
+
+    }
+  );
+
+
+  /* =========================================================
+     WINDOW RESIZE
+  ========================================================= */
+
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 1050) setMenuOpen(false);
+    else if (navigation && navigation.classList.contains('open')) updateMenuPosition();
+  });
+
+
+})();
+
+</script>
